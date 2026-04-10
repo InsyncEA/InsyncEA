@@ -1,0 +1,21 @@
+backend:
+  name: github
+  repo: InsyncEA/insyncEA-website
+  branch: main
+  base_url: https://insync-ea-website.vercel.app
+  auth_endpoint: auth
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Homepage"
+        name: "home"
+        file: "index.html"
+        fields:
+          - label: "Page Content"
+            name: "body"
+            widget: "markdown"
