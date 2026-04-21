@@ -3,35 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Executive Assistant &amp; Executive Virtual Assistant | USA &amp; UK | InSyncEA</title>
-<meta name="description" content="InSyncEA provides professional Executive Assistant and Executive Virtual Assistant services to CEOs, founders and executives in the USA, UK and globally. Calendar management, inbox management, travel coordination, project management and more. Book a free consultation today.">
-<meta name="keywords" content="executive assistant USA, executive assistant UK, executive virtual assistant USA, executive virtual assistant UK, hire executive assistant, executive assistant services, virtual executive assistant London, virtual executive assistant New York, remote executive assistant, EA for founders, executive assistant for CEOs, online executive assistant">
+<title>Executive Virtual Assistant for CEOs &amp; Founders | USA &amp; UK | InSyncEA</title>
+<meta name="description" content="InSyncEA provides premium Executive Assistant services to CEOs, founders, and executives across the USA and UK. Specialising in calendar management, inbox management, travel coordination, and operations. Serving New York, London, Los Angeles, Manchester and beyond.">
+<meta name="keywords" content="executive assistant USA, executive assistant UK, virtual executive assistant London, virtual executive assistant New York, hire executive assistant USA, executive virtual assistant UK, EA services for CEOs, executive assistant for founders, executive assistant Los Angeles, executive assistant Chicago, executive assistant Houston, executive assistant Manchester, executive assistant Birmingham, remote executive assistant USA, remote executive assistant UK, online executive assistant, inbox management, calendar management, travel coordination, executive support">
+<!-- Geo targeting -->
+<meta name="geo.region" content="US">
+<meta name="geo.region" content="GB">
+<meta name="geo.placename" content="New York, London, Los Angeles, Chicago, Houston, Manchester, Birmingham">
+<meta name="ICBM" content="40.7128,-74.0060">
+<link rel="alternate" hreflang="en-us" href="https://insync-ea.com/">
+<link rel="alternate" hreflang="en-gb" href="https://insync-ea.com/">
 <meta name="theme-color" content="#1B3A2D">
 <meta name="robots" content="index, follow">
 <meta name="author" content="InSyncEA">
-<meta name="geo.region" content="US">
-<meta name="geo.region" content="GB">
-<meta name="language" content="English">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<link rel="canonical" href="https://insyncea.pages.dev/">
-<meta property="og:title" content="Executive Assistant &amp; Executive Virtual Assistant | InSyncEA">
-<meta property="og:description" content="Professional Executive Assistant and Executive Virtual Assistant services. Calendar management, email management, travel coordination, project management and more. Available globally.">
+<link rel="canonical" href="https://insync-ea.com/">
+<meta property="og:title" content="Executive Virtual Assistant for CEOs &amp; Founders | USA &amp; UK | InSyncEA">
+<meta property="og:description" content="Premium Executive Assistant services for CEOs, founders, and executives across the USA and UK. Calendar management, inbox management, travel coordination, and full operations support. Serving New York, London, and beyond.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="InSyncEA">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Executive Assistant &amp; Executive Virtual Assistant | InSyncEA">
-<meta name="twitter:description" content="Professional Executive Assistant services including calendar management, email management, travel coordination, and more. Available globally.">
-
+<meta name="twitter:title" content="Executive Virtual Assistant for CEOs &amp; Founders | USA &amp; UK | InSyncEA">
+<meta name="twitter:description" content="Premium Executive Assistant services for CEOs, founders, and executives across the USA and UK. Calendar, inbox, travel, and operations support. Available in New York, London, and globally.">
+<link rel="canonical" href="https://insync-ea.com/">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "InSyncEA",
-  "description": "Professional Executive Assistant and Executive Virtual Assistant services including calendar management, email management, travel coordination, project management, financial support and more.",
+  "description": "Premium Executive Assistant and Executive Virtual Assistant services for CEOs, founders, and executives in the USA and UK. Specialising in calendar management, email management, travel coordination, project management, and financial support.",
   "url": "https://insync-ea.com",
   "logo": "https://insync-ea.com/logo.png",
   "serviceType": ["Executive Assistant", "Executive Virtual Assistant", "Virtual Assistant"],
-  "areaServed": "Worldwide",
+  "areaServed": [
+    {"@type": "City", "name": "New York", "sameAs": "https://www.wikidata.org/wiki/Q60"},
+    {"@type": "City", "name": "Los Angeles", "sameAs": "https://www.wikidata.org/wiki/Q65"},
+    {"@type": "City", "name": "Chicago", "sameAs": "https://www.wikidata.org/wiki/Q1297"},
+    {"@type": "City", "name": "Houston", "sameAs": "https://www.wikidata.org/wiki/Q16555"},
+    {"@type": "City", "name": "London", "sameAs": "https://www.wikidata.org/wiki/Q84"},
+    {"@type": "City", "name": "Manchester", "sameAs": "https://www.wikidata.org/wiki/Q18125"},
+    {"@type": "City", "name": "Birmingham", "sameAs": "https://www.wikidata.org/wiki/Q2256"}
+  ],
   "availableLanguage": "English",
   "priceRange": "$$",
   "hasOfferCatalog": {
@@ -90,6 +101,31 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;background:rgba(255,255,255,
 .nav-links a:hover,.nav-links a.active{color:var(--green)}
 .nav-cta{background:var(--green);color:var(--white);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;padding:12px 28px;border:none;cursor:pointer;font-family:'Jost',sans-serif;font-weight:500;transition:background 0.2s}
 .nav-cta:hover{background:#2D6A4F}
+
+/* HAMBURGER */
+.hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;width:40px;height:40px;background:none;border:none;cursor:pointer;padding:4px;flex-shrink:0;margin-left:16px}
+.hamburger span{display:block;width:24px;height:1.5px;background:var(--green);transition:all 0.3s ease;transform-origin:center}
+.hamburger:hover span{background:var(--jungle)}
+
+/* MOBILE MENU OVERLAY */
+.mobile-menu{position:fixed;inset:0;z-index:9999;background:var(--forest);display:flex;flex-direction:column;justify-content:center;align-items:center;opacity:0;visibility:hidden;transition:opacity 0.4s ease,visibility 0.4s ease;padding:40px}
+.mobile-menu.is-open{opacity:1;visibility:visible}
+.mobile-menu-close{position:absolute;top:24px;right:24px;background:none;border:none;color:rgba(255,255,255,0.55);font-size:20px;width:44px;height:44px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:color 0.2s;border:1px solid rgba(255,255,255,0.15);letter-spacing:0}
+.mobile-menu-close:hover{color:white;border-color:rgba(255,255,255,0.4)}
+.mobile-menu-nav{display:flex;flex-direction:column;align-items:center;gap:4px;width:100%}
+.mobile-menu-nav a{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,8vw,60px);font-weight:300;color:rgba(255,255,255,0.75);text-decoration:none;cursor:pointer;line-height:1.3;transition:color 0.2s;text-align:center;display:block;width:100%}
+.mobile-menu-nav a em{font-style:italic}
+.mobile-menu-nav a:hover{color:white}
+.mobile-menu-footer{margin-top:48px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:20px}
+.mobile-menu-tagline{font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.3);font-weight:300}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .nav-links{display:none}
+  .nav-cta{display:none}
+  .hamburger{display:flex}
+}
+body.menu-open{overflow:hidden}
 
 /* SECTIONS */
 section{display:none;padding-top:72px}
@@ -465,54 +501,9 @@ section.active{display:block}
 /* ADD sage variable */
 
 --sage:#52B788;
-
-/* ── MOBILE NAVIGATION ── */
-.nav-burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none;z-index:1001;flex-shrink:0}
-.nav-burger span{display:block;width:24px;height:2px;background:var(--green);transition:all 0.3s;border-radius:2px}
-.nav-burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-.nav-burger.open span:nth-child(2){opacity:0;width:0}
-.nav-burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-.nav-mobile{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:white;z-index:998;flex-direction:column;justify-content:center;align-items:center;gap:0;padding:80px 32px 40px}
-.nav-mobile.open{display:flex}
-.nav-mobile a{display:block;width:100%;text-align:center;padding:18px 0;font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:400;color:var(--green);text-decoration:none;cursor:pointer;border-bottom:1px solid var(--border);font-style:italic;transition:color 0.2s}
-.nav-mobile a:hover{color:var(--green2)}
-.nav-mobile-cta{margin-top:28px;padding:16px 48px;background:var(--green);color:white;border:none;font-family:'Jost',sans-serif;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;cursor:pointer;font-weight:500;width:100%;transition:background 0.2s}
-.nav-mobile-cta:hover{background:var(--green2)}
-.nav-mobile-close{position:absolute;top:20px;right:24px;background:none;border:none;font-size:28px;cursor:pointer;color:var(--green);line-height:1}
-@media(max-width:900px){
-  .nav-links{display:none!important}
-  .nav-cta{display:none!important}
-  .nav-burger{display:flex!important}
-}
-@media(max-width:768px){
-  .nav-inner{height:60px!important}
-  section{padding-top:60px!important}
-  .hero-split,.home-about,.about-split,.video-grid,.svc-intro{grid-template-columns:1fr!important}
-  .hero-right,.ha-right{min-height:280px!important}
-  .svc-grid{grid-template-columns:1fr!important}
-  .port-cases{grid-template-columns:1fr!important}
-  .ws-scroll{grid-template-columns:1fr 1fr!important}
-  .img-grid-3,.img-grid-2{grid-template-columns:1fr!important}
-  .img-wide{grid-column:span 1!important}
-  .gallery-mosaic{grid-template-columns:1fr!important;grid-template-rows:auto!important}
-  .gm-main{grid-row:span 1!important}
-  .form-grid{grid-template-columns:1fr!important}
-  .field.full{grid-column:span 1!important}
-  .bfeat-split{grid-template-columns:1fr!important}
-  .blog-grid{grid-template-columns:1fr!important}
-  .ft-top{grid-template-columns:1fr 1fr!important}
-  .hs-grid{grid-template-columns:1fr 1fr!important}
-  .ab-stats{grid-template-columns:1fr 1fr!important}
-  .trust-strip{flex-wrap:wrap;gap:16px!important}
-  .home-services .hs-left,.home-services .hs-right{padding:40px 24px!important}
-}
-@media(max-width:480px){
-  .ws-scroll,.hs-grid,.ab-stats,.ft-top{grid-template-columns:1fr!important}
-  .hs-left{padding:40px 20px!important}
-}
 </style>
 
-
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
 var pageMeta={
   home:{title:"Executive Assistant & Executive Virtual Assistant | InSyncEA",description:"InSyncEA provides expert Executive Assistant and Executive Virtual Assistant services. Calendar management, inbox management, travel coordination, project management and more. Available globally."},
@@ -555,20 +546,27 @@ function updatePageMeta(id){
       <li><a onclick="show('contact')" id="n-contact">Contact</a></li>
     </ul>
     <button class="nav-cta" onclick="show('contact')">Work With Me</button>
-    <button class="nav-burger" id="nav-burger" onclick="openMobileMenu()" aria-label="Open menu">
+    <button class="hamburger" id="hamburger" onclick="openMobileMenu()" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
   </div>
 </nav>
-<div class="nav-mobile" id="nav-mobile">
-  <button class="nav-mobile-close" onclick="closeMobileMenu()" aria-label="Close menu">&times;</button>
-  <a onclick="show('home');closeMobileMenu()">Home</a>
-  <a onclick="show('services');closeMobileMenu()">Services</a>
-  <a onclick="show('portfolio');closeMobileMenu()">Portfolio</a>
-  <a onclick="show('about');closeMobileMenu()">About</a>
-  <a onclick="show('blog');closeMobileMenu()">Blog</a>
-  <a onclick="show('contact');closeMobileMenu()">Contact</a>
-  <button class="nav-mobile-cta" onclick="show('contact');closeMobileMenu()">Work With Me</button>
+
+<!-- MOBILE MENU OVERLAY -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Site navigation">
+  <button class="mobile-menu-close" id="mobileMenuClose" onclick="closeMobileMenu()" aria-label="Close menu">&#10005;</button>
+  <nav class="mobile-menu-nav">
+    <a onclick="mobileNav('home')"><em>Home</em></a>
+    <a onclick="mobileNav('services')"><em>Services</em></a>
+    <a onclick="mobileNav('portfolio')"><em>Portfolio</em></a>
+    <a onclick="mobileNav('about')"><em>About</em></a>
+    <a onclick="mobileNav('blog')"><em>Blog</em></a>
+    <a onclick="mobileNav('contact')"><em>Contact</em></a>
+  </nav>
+  <div class="mobile-menu-footer">
+    <button class="btn-outline-white" onclick="mobileNav('contact')">Work With Me</button>
+    <p class="mobile-menu-tagline">Executive Assistant · USA & UK</p>
+  </div>
 </div>
 
 <!-- ===== HOME ===== -->
@@ -799,7 +797,7 @@ function updatePageMeta(id){
       <div class="ft-top">
         <div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Assistant & Operations Specialist. Supporting leaders and founders to operate at their absolute best.</p></div>
         <div><p class="ft-col-title">Pages</p><ul class="ft-links"><li onclick="show('services')">Services</li><li onclick="show('portfolio')">Portfolio</li><li onclick="show('about')">About</li><li onclick="show('blog')">Blog</li></ul></div>
-        <div><p class="ft-col-title">Connect</p><ul class="ft-links"><li onclick="show('contact')">Work With Me</li><li>LinkedIn</li><li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="026a676e6e6d426b6c717b6c612f67632c616d6f">[email&#160;protected]</a></li></ul></div>
+        <div><p class="ft-col-title">Connect</p><ul class="ft-links"><li onclick="show('contact')">Work With Me</li><li>LinkedIn</li><li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="59313c3535361930372a20373a743c38773a3634">[email&#160;protected]</a></li></ul></div>
         <div><p class="ft-col-title">Legal</p><ul class="ft-links"><li onclick="show('privacy')">Privacy Policy</li><li onclick="show('privacy')">Terms of Service</li></ul></div>
       </div>
       <div class="ft-bottom"><span>© 2025 InSyncEA. All rights reserved.</span><span>Executive Assistant · Brooklyn, NY · Available Globally</span></div>
@@ -1021,7 +1019,7 @@ function updatePageMeta(id){
     <p class="ctab-p">Book a free 30-minute consultation and I'll tell you exactly what would make the biggest difference for you right now.</p>
     <button class="btn-outline-white" onclick="show('contact')">Book a Free Consultation</button>
   </div>
-  <footer class="site-footer"><div class="ft-inner"><div class="ft-top"><div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Assistant & Operations Specialist.</p></div><div><p class="ft-col-title">Pages</p><ul class="ft-links"><li onclick="show('home')">Home</li><li onclick="show('portfolio')">Portfolio</li><li onclick="show('about')">About</li><li onclick="show('contact')">Contact</li></ul></div><div><p class="ft-col-title">Connect</p><ul class="ft-links"><li>LinkedIn</li><li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="365e535a5a59765f58454f58551b53571855595b">[email&#160;protected]</a></li></ul></div><div><p class="ft-col-title">Legal</p><ul class="ft-links"><li onclick="show('privacy')">Privacy Policy</li></ul></div></div><div class="ft-bottom"><span>© 2025 InSyncEA</span><span>Executive Assistant · Brooklyn, NY</span></div></div></footer>
+  <footer class="site-footer"><div class="ft-inner"><div class="ft-top"><div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Assistant & Operations Specialist.</p></div><div><p class="ft-col-title">Pages</p><ul class="ft-links"><li onclick="show('home')">Home</li><li onclick="show('portfolio')">Portfolio</li><li onclick="show('about')">About</li><li onclick="show('contact')">Contact</li></ul></div><div><p class="ft-col-title">Connect</p><ul class="ft-links"><li>LinkedIn</li><li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6008050c0c0f20090e13190e034d05014e030f0d">[email&#160;protected]</a></li></ul></div><div><p class="ft-col-title">Legal</p><ul class="ft-links"><li onclick="show('privacy')">Privacy Policy</li></ul></div></div><div class="ft-bottom"><span>© 2025 InSyncEA</span><span>Executive Assistant · Brooklyn, NY</span></div></div></footer>
 </section>
 
 <!-- ===== PORTFOLIO ===== -->
@@ -1192,7 +1190,7 @@ function updatePageMeta(id){
     <p class="ctab-p">Let's talk about what's possible for your business.</p>
     <button class="btn-outline-white" onclick="show('contact')">Book a Free Consultation</button>
   </div>
-  <footer class="site-footer"><div class="ft-inner"><div class="ft-top"><div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Assistant & Operations Specialist.</p></div><div><p class="ft-col-title">Pages</p><ul class="ft-links"><li onclick="show('home')">Home</li><li onclick="show('services')">Services</li><li onclick="show('contact')">Contact</li></ul></div><div><p class="ft-col-title">Connect</p><ul class="ft-links"><li>LinkedIn</li><li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9ff7faf3f3f0dff6f1ece6f1fcb2fafeb1fcf0f2">[email&#160;protected]</a></li></ul></div><div><p class="ft-col-title">Legal</p><ul class="ft-links"><li onclick="show('privacy')">Privacy Policy</li></ul></div></div><div class="ft-bottom"><span>© 2025 InSyncEA</span></div></div></footer>
+  <footer class="site-footer"><div class="ft-inner"><div class="ft-top"><div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Assistant & Operations Specialist.</p></div><div><p class="ft-col-title">Pages</p><ul class="ft-links"><li onclick="show('home')">Home</li><li onclick="show('services')">Services</li><li onclick="show('contact')">Contact</li></ul></div><div><p class="ft-col-title">Connect</p><ul class="ft-links"><li>LinkedIn</li><li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="94fcf1f8f8fbd4fdfae7edfaf7b9f1f5baf7fbf9">[email&#160;protected]</a></li></ul></div><div><p class="ft-col-title">Legal</p><ul class="ft-links"><li onclick="show('privacy')">Privacy Policy</li></ul></div></div><div class="ft-bottom"><span>© 2025 InSyncEA</span></div></div></footer>
 </section>
 
 <!-- ===== ABOUT ===== -->
@@ -1290,7 +1288,7 @@ function updatePageMeta(id){
     <p class="ctab-p">I'd love to learn about your business and how I can help you operate at your very best.</p>
     <button class="btn-outline-white" onclick="show('contact')">Book a Free Consultation</button>
   </div>
-  <footer class="site-footer"><div class="ft-inner"><div class="ft-top"><div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Assistant & Operations Specialist.</p></div><div><p class="ft-col-title">Pages</p><ul class="ft-links"><li onclick="show('services')">Services</li><li onclick="show('portfolio')">Portfolio</li><li onclick="show('contact')">Contact</li></ul></div><div><p class="ft-col-title">Connect</p><ul class="ft-links"><li>LinkedIn</li><li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="553d3039393a153c3b262c3b367830347b363a38">[email&#160;protected]</a></li></ul></div><div><p class="ft-col-title">Legal</p><ul class="ft-links"><li onclick="show('privacy')">Privacy Policy</li></ul></div></div><div class="ft-bottom"><span>© 2025 InSyncEA</span></div></div></footer>
+  <footer class="site-footer"><div class="ft-inner"><div class="ft-top"><div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Assistant & Operations Specialist.</p></div><div><p class="ft-col-title">Pages</p><ul class="ft-links"><li onclick="show('services')">Services</li><li onclick="show('portfolio')">Portfolio</li><li onclick="show('contact')">Contact</li></ul></div><div><p class="ft-col-title">Connect</p><ul class="ft-links"><li>LinkedIn</li><li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ddb5b8b1b1b29db4b3aea4b3bef0b8bcf3beb2b0">[email&#160;protected]</a></li></ul></div><div><p class="ft-col-title">Legal</p><ul class="ft-links"><li onclick="show('privacy')">Privacy Policy</li></ul></div></div><div class="ft-bottom"><span>© 2025 InSyncEA</span></div></div></footer>
 </section>
 
 <!-- ===== BLOG ===== -->
@@ -1356,7 +1354,7 @@ function updatePageMeta(id){
     </div>
   </div>
 
-  <footer class="site-footer"><div class="ft-inner"><div class="ft-top"><div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Assistant & Operations Specialist.</p></div><div><p class="ft-col-title">Pages</p><ul class="ft-links"><li onclick="show('home')">Home</li><li onclick="show('services')">Services</li><li onclick="show('contact')">Contact</li></ul></div><div><p class="ft-col-title">Connect</p><ul class="ft-links"><li>LinkedIn</li><li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="224a474e4e4d624b4c515b4c410f47430c414d4f">[email&#160;protected]</a></li></ul></div><div><p class="ft-col-title">Legal</p><ul class="ft-links"><li onclick="show('privacy')">Privacy Policy</li></ul></div></div><div class="ft-bottom"><span>© 2025 InSyncEA</span></div></div></footer>
+  <footer class="site-footer"><div class="ft-inner"><div class="ft-top"><div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Assistant & Operations Specialist.</p></div><div><p class="ft-col-title">Pages</p><ul class="ft-links"><li onclick="show('home')">Home</li><li onclick="show('services')">Services</li><li onclick="show('contact')">Contact</li></ul></div><div><p class="ft-col-title">Connect</p><ul class="ft-links"><li>LinkedIn</li><li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="adc5c8c1c1c2edc4c3ded4c3ce80c8cc83cec2c0">[email&#160;protected]</a></li></ul></div><div><p class="ft-col-title">Legal</p><ul class="ft-links"><li onclick="show('privacy')">Privacy Policy</li></ul></div></div><div class="ft-bottom"><span>© 2025 InSyncEA</span></div></div></footer>
 </section>
 
 <!-- ===== CONTACT ===== -->
@@ -1367,7 +1365,7 @@ function updatePageMeta(id){
       <h2>Let's talk about what's possible</h2>
       <p>I take on a limited number of clients so that every engagement gets my full attention and my best work. Book a free 30-minute consultation, no pitch, no pressure, just an honest conversation about whether I can help.</p>
       <div class="ci-items">
-        <div class="ci-item"><div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><div class="ci-lbl">Email</div><div class="ci-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ea828f868685aa838499938489c78f8bc4898587">[email&#160;protected]</a></div></div></div>
+        <div class="ci-item"><div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><div class="ci-lbl">Email</div><div class="ci-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="78101d1414173811160b01161b551d19561b1715">[email&#160;protected]</a></div></div></div>
         <div class="ci-item"><div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="ci-lbl">Location</div><div class="ci-val">Brooklyn, NY · Available Globally</div></div></div>
         <div class="ci-item"><div class="ci-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><div class="ci-lbl">Response Time</div><div class="ci-val">Within 24 hours, always</div></div></div>
         <div class="ci-item"><div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div><div><div class="ci-lbl">LinkedIn</div><div class="ci-val">linkedin.com/in/insync-ea</div></div></div>
@@ -1396,7 +1394,7 @@ function updatePageMeta(id){
       <p style="font-size:11px;color:var(--soft);margin-top:14px;line-height:1.6;font-weight:300">By submitting this form you agree to my <span style="color:var(--green);cursor:pointer" onclick="show('privacy')">Privacy Policy</span>. I will never share your information with third parties.</p>
     </div>
   </div>
-  <footer class="site-footer"><div class="ft-inner"><div class="ft-top"><div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Assistant & Operations Specialist.</p></div><div><p class="ft-col-title">Pages</p><ul class="ft-links"><li onclick="show('home')">Home</li><li onclick="show('services')">Services</li><li onclick="show('about')">About</li></ul></div><div><p class="ft-col-title">Connect</p><ul class="ft-links"><li>LinkedIn</li><li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="48202d2424270821263b31262b652d29662b2725">[email&#160;protected]</a></li></ul></div><div><p class="ft-col-title">Legal</p><ul class="ft-links"><li onclick="show('privacy')">Privacy Policy</li></ul></div></div><div class="ft-bottom"><span>© 2025 InSyncEA</span></div></div></footer>
+  <footer class="site-footer"><div class="ft-inner"><div class="ft-top"><div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Assistant & Operations Specialist.</p></div><div><p class="ft-col-title">Pages</p><ul class="ft-links"><li onclick="show('home')">Home</li><li onclick="show('services')">Services</li><li onclick="show('about')">About</li></ul></div><div><p class="ft-col-title">Connect</p><ul class="ft-links"><li>LinkedIn</li><li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d9b1bcb5b5b699b0b7aaa0b7baf4bcb8f7bab6b4">[email&#160;protected]</a></li></ul></div><div><p class="ft-col-title">Legal</p><ul class="ft-links"><li onclick="show('privacy')">Privacy Policy</li></ul></div></div><div class="ft-bottom"><span>© 2025 InSyncEA</span></div></div></footer>
 </section>
 
 <!-- ===== PRIVACY ===== -->
@@ -1454,7 +1452,7 @@ function updatePageMeta(id){
       <li>Withdraw consent at any time (where processing is based on consent)</li>
       <li>Lodge a complaint with a supervisory authority</li>
     </ul>
-    <p>To exercise any of these rights, please contact me at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8fe7eae3e3e0cfe6e1fcf6e1eca2eaeea1ece0e2">[email&#160;protected]</a>. I will respond within 30 days.</p>
+    <p>To exercise any of these rights, please contact me at <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9cf4f9f0f0f3dcf5f2efe5f2ffb1f9fdb2fff3f1">[email&#160;protected]</a>. I will respond within 30 days.</p>
 
     <h2>9. Children's Privacy</h2>
     <p>This website is not directed at children under the age of 13. I do not knowingly collect personal information from children. If you believe a child has provided personal information through this site, please contact me immediately.</p>
@@ -1465,11 +1463,11 @@ function updatePageMeta(id){
     <h2>11. Contact</h2>
     <p>If you have any questions about this Privacy Policy or how I handle your personal information, please contact me:</p>
     <ul>
-      <li>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="254d4049494a654c4b565c4b460840440b464a48">[email&#160;protected]</a></li>
+      <li>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="264e434a4a49664f48555f48450b43470845494b">[email&#160;protected]</a></li>
       <li>Location: Brooklyn, New York</li>
     </ul>
   </div>
-  <footer class="site-footer"><div class="ft-inner"><div class="ft-top"><div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Assistant & Operations Specialist.</p></div><div><p class="ft-col-title">Pages</p><ul class="ft-links"><li onclick="show('home')">Home</li><li onclick="show('services')">Services</li><li onclick="show('contact')">Contact</li></ul></div><div><p class="ft-col-title">Connect</p><ul class="ft-links"><li>LinkedIn</li><li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b9d1dcd5d5d6f9d0d7cac0d7da94dcd897dad6d4">[email&#160;protected]</a></li></ul></div><div><p class="ft-col-title">Legal</p><ul class="ft-links"><li onclick="show('privacy')">Privacy Policy</li></ul></div></div><div class="ft-bottom"><span>© 2025 InSyncEA · <a onclick="show('privacy')">Privacy Policy</a></span></div></div></footer>
+  <footer class="site-footer"><div class="ft-inner"><div class="ft-top"><div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Assistant & Operations Specialist.</p></div><div><p class="ft-col-title">Pages</p><ul class="ft-links"><li onclick="show('home')">Home</li><li onclick="show('services')">Services</li><li onclick="show('contact')">Contact</li></ul></div><div><p class="ft-col-title">Connect</p><ul class="ft-links"><li>LinkedIn</li><li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="99f1fcf5f5f6d9f0f7eae0f7fab4fcf8b7faf6f4">[email&#160;protected]</a></li></ul></div><div><p class="ft-col-title">Legal</p><ul class="ft-links"><li onclick="show('privacy')">Privacy Policy</li></ul></div></div><div class="ft-bottom"><span>© 2025 InSyncEA · <a onclick="show('privacy')">Privacy Policy</a></span></div></div></footer>
 </section>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
@@ -1560,17 +1558,6 @@ const posts = {
   `}
 };
 
-
-function openMobileMenu(){
-  document.getElementById('nav-burger').classList.add('open');
-  document.getElementById('nav-mobile').classList.add('open');
-  document.body.style.overflow='hidden';
-}
-function closeMobileMenu(){
-  document.getElementById('nav-burger').classList.remove('open');
-  document.getElementById('nav-mobile').classList.remove('open');
-  document.body.style.overflow='';
-}
 function show(id){
   document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
   document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));
@@ -1578,69 +1565,36 @@ function show(id){
   if(s)s.classList.add('active');
   const n=document.getElementById('n-'+id);
   if(n)n.classList.add('active');
-
-    document.getElementById('blog-list-view').style.display='block';
-    document.getElementById('blog-post-view').style.display='none';
+  if(id==='blog'){
+    document.getElementById('blog-list').style.display='block';
+    document.getElementById('blog-post').style.display='none';
   }
-  window.scrollTo({top:0,behavior:'smooth'});
+  window.scrollTo(0,0);
   updatePageMeta(id);
 }
 
-// Mobile menu toggle
-function toggleMenu(){
-  const menu = document.getElementById('mobile-menu');
-  const overlay = document.getElementById('menu-overlay');
-  menu.classList.toggle('open');
-  overlay.classList.toggle('show');
-  document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+function openMobileMenu(){
+  document.getElementById('mobileMenu').classList.add('is-open');
+  document.body.classList.add('menu-open');
 }
 
-function closeMenu(){
-  const menu = document.getElementById('mobile-menu');
-  const overlay = document.getElementById('menu-overlay');
-  menu.classList.remove('open');
-  overlay.classList.remove('show');
-  document.body.style.overflow = '';
+function closeMobileMenu(){
+  document.getElementById('mobileMenu').classList.remove('is-open');
+  document.body.classList.remove('menu-open');
 }
 
-function showAndClose(id){
+function mobileNav(id){
+  closeMobileMenu();
   show(id);
-  closeMenu();
 }
 
-// Blog functions
-function openPost(id){
-  const post = blogPosts[id];
-  if(!post) return;
-  document.getElementById('blog-list-view').style.display='none';
-  document.getElementById('blog-post-view').style.display='block';
-  document.getElementById('bp-title').textContent = post.title;
-  document.getElementById('bp-cat').textContent = post.category;
-  document.getElementById('bp-date').textContent = post.date;
-  document.getElementById('bp-body').innerHTML = post.content;
-  window.scrollTo({top:0,behavior:'smooth'});
-}
+// Close mobile menu on Escape key
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape') closeMobileMenu();
+});
 
-function backToBlog(){
-  document.getElementById('blog-list-view').style.display='block';
-  document.getElementById('blog-post-view').style.display='none';
-  window.scrollTo({top:0,behavior:'smooth'});
-}
-
-// Contact form
-function submitForm(e){
-  if(e) e.preventDefault();
-  const btn = document.getElementById('submit-btn');
-  const msg = document.getElementById('form-msg');
-  btn.textContent = 'Sending...';
-  btn.disabled = true;
-  setTimeout(()=>{
-    btn.textContent = 'Message Sent';
-    msg.style.display = 'block';
-    btn.disabled = false;
-  }, 1500);
-}
+// Page init
+show('home');
 </script>
 </body>
 </html>
-<!-- force redeploy -->
