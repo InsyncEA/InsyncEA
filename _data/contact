@@ -1,18 +1,1 @@
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Insync EA",
-  "email": "wendy@insyncea.com",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Nairobi",
-    "addressCountry": "Kenya"
-  },
-  "url": "https://insyncea.com",
-  "sameAs": [
-    "https://linkedin.com/in/insync-ea"
-  ],
-  "description": "Executive Virtual Assistant supporting US, UK and global executives."
-}
-</script>
+
