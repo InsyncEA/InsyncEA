@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Executive Virtual Assistant for US, UK &amp; Global Businesses | Professional Administrative Support | InSyncEA</title>
-<meta name="description" content="Professional Executive Virtual Assistant providing email management, calendar coordination, administrative support and business organization for US, UK and global businesses.">
+<title>Executive Virtual Assistant for CEOs &amp; Founders | InSyncEA</title>
+<meta name="description" content="Executive Virtual Assistant for US, UK &amp; global businesses. Expert email management, calendar coordination, travel planning and administrative support.">
 <meta name="keywords" content="executive assistant USA, executive assistant UK, virtual executive assistant London, virtual executive assistant New York, hire executive assistant USA, executive virtual assistant UK, EA services for CEOs, executive assistant for founders, executive assistant Los Angeles, executive assistant Chicago, executive assistant Houston, executive assistant Manchester, executive assistant Birmingham, remote executive assistant USA, remote executive assistant UK, online executive assistant, inbox management, calendar management, travel coordination, executive support">
 <!-- Geo targeting -->
 <meta name="geo.region" content="US">
@@ -59,7 +59,7 @@
     ]
   },
   "sameAs": [
-    "https://linkedin.com/in/insync-ea"
+    "https://linkedin.com/in/wendymwende"
   ]
 }
 </script>
@@ -194,6 +194,7 @@ body.menu-open{overflow:hidden!important}
 /* ============================================================
    RESPONSIVE — tablet & mobile
    ============================================================ */
+
 /* =====================================================
    TABLET  ≤ 1024px
    ===================================================== */
@@ -207,73 +208,102 @@ body.menu-open{overflow:hidden!important}
   /* HERO */
   .hero{display:block!important;min-height:auto!important}
   .hero-right{display:none!important}
-  .hero-left{max-width:100%!important;padding:48px 5% 40px!important}
-  .hero h1{font-size:clamp(36px,8vw,56px)!important}
-  .hero-sub{font-size:15px;max-width:100%}
-  .hero-stats{gap:28px;padding-top:28px}
-  .hero-btns{flex-wrap:wrap;gap:12px}
+  .hero-left{max-width:100%!important;padding:56px 6% 48px!important;box-sizing:border-box!important}
+  .hero h1{font-size:clamp(34px,7vw,52px)!important;line-height:1.15!important}
+  .hero-sub{font-size:15px!important;max-width:100%!important}
+  .hero-stats{gap:24px!important;padding-top:28px!important;flex-wrap:wrap!important}
+  .hero-btns{flex-wrap:wrap!important;gap:12px!important}
 
   /* PAGE HEADERS */
-  .ph{padding:80px 5% 56px}
-  .ph h1{font-size:clamp(28px,6vw,48px)!important}
+  .ph{padding:88px 6% 56px!important}
+  .ph h1{font-size:clamp(26px,5.5vw,44px)!important}
+  .ph p{max-width:100%!important}
+
+  /* TRUST STRIP */
+  .ts-inner{gap:20px!important}
+  .ts-logos{gap:24px!important;flex-wrap:wrap!important;justify-content:center!important}
+
+  /* VISIONARIES CAROUSEL */
+  .viz-carousel{max-height:none!important}
+  .viz-card-inner{padding:28px 32px!important}
 
   /* HOME SERVICES */
-  .hs-header{grid-template-columns:1fr!important;gap:16px!important;margin-bottom:36px!important}
+  .hs-header{grid-template-columns:1fr!important;gap:12px!important;margin-bottom:32px!important}
   .hs-grid{grid-template-columns:1fr!important}
-  .hs-card{padding:32px 24px}
-  .home-services{padding:64px 5%}
+  .hs-card{padding:32px 24px!important}
+  .home-services{padding:64px 6%!important}
+  .hs-h{font-size:clamp(26px,5vw,40px)!important}
 
   /* HOME ABOUT */
   .home-about{display:block!important}
   .ha-right{display:none!important}
-  .ha-left{padding:56px 5%!important}
+  .ha-left{padding:56px 6%!important;max-width:100%!important}
+  .ha-h{font-size:clamp(26px,4vw,40px)!important}
+
+  /* INLINE VIDEO HEADER — 2-col to 1-col */
+  .video-header-grid{grid-template-columns:1fr!important;gap:16px!important}
+
+  /* VIDEO */
+  .video-section{padding:64px 6%!important}
+  .video-grid{grid-template-columns:1fr!important;gap:24px!important}
+  .video-side{gap:12px!important}
 
   /* PROCESS */
   .hp-grid{grid-template-columns:1fr!important}
-  .hp-card{padding:36px 5%!important}
-  .home-process{padding:64px 5%}
+  .hp-card{padding:40px 6%!important}
+  .home-process{padding:64px 6%!important}
+  .hp-header{margin-bottom:40px!important}
 
   /* CTA BAND */
-  .cta-band{padding:56px 5%}
-  .ctab-h{font-size:clamp(22px,5vw,38px)!important}
+  .cta-band{padding:56px 6%!important;text-align:center!important}
+  .ctab-h{font-size:clamp(22px,5vw,36px)!important}
 
   /* SERVICES */
-  .svc-intro{grid-template-columns:1fr!important;gap:32px!important;padding:48px 5% 0!important}
-  .svc-grid{grid-template-columns:1fr!important}
-  .svc-card{padding:36px 24px}
+  .svc-intro{grid-template-columns:1fr!important;gap:32px!important;padding:56px 6% 0!important}
+  .svc-grid{grid-template-columns:1fr 1fr!important;padding:48px 6% 80px!important}
+  .svc-card{padding:36px 24px!important}
 
   /* PORTFOLIO */
   .port-stats{grid-template-columns:1fr 1fr!important}
+  .pst-item{padding:32px 20px!important}
   .port-case{display:block!important}
   .port-case>div:last-child{display:none!important}
-  .port-cases{padding:0 5% 64px}
+  .port-cases{padding:0 6% 64px!important}
+  .pc-content{padding:36px 28px!important}
 
   /* TESTIMONIALS */
-  .test-grid{grid-template-columns:1fr!important}
+  .test-grid{grid-template-columns:1fr 1fr!important;padding:0 6% 80px!important}
 
   /* ABOUT */
   .about-split{display:block!important}
-  .ab-skills{grid-template-columns:1fr 1fr!important}
-  .av-grid{grid-template-columns:1fr 1fr!important}
+  .ab-left{min-height:320px!important;padding:48px!important}
+  .ab-right{padding:56px 6%!important}
+  .ab-skills{grid-template-columns:1fr 1fr!important;gap:10px!important}
+  .av-section{padding:64px 6%!important}
+  .av-grid{grid-template-columns:1fr 1fr!important;gap:12px!important}
 
-  /* FAQ */
-  .faq-wrap{grid-template-columns:1fr!important;gap:24px!important;padding:48px 5% 64px!important}
-
-  /* BLOG */
+  /* BLOG HERO */
   .blog-hero-grid{grid-template-columns:1fr!important}
+  .bside{display:grid!important;grid-template-columns:1fr 1fr!important}
   .blog-grid{grid-template-columns:1fr 1fr!important}
 
   /* CONTACT */
   .contact-split{display:block!important;min-height:auto!important}
+  .ci-panel{padding:56px 6%!important}
+  .cf-panel{padding:48px 6%!important}
   .fg-row{grid-template-columns:1fr!important}
 
-  /* FOOTER */
-  .ft-top{grid-template-columns:1fr 1fr!important;gap:32px!important}
-  .ft-bottom{flex-wrap:wrap;gap:8px}
+  /* FAQ */
+  .faq-wrap{grid-template-columns:1fr!important;gap:24px!important;padding:56px 6% 64px!important}
+  .faq-side{position:static!important}
 
-  /* IMAGES — square aspect ratio, never stretched */
-  .img-card img{height:auto!important;aspect-ratio:1/1;object-fit:cover;width:100%}
-  .img-grid-3{grid-template-columns:1fr!important}
+  /* FOOTER */
+  .ft-top{grid-template-columns:1fr 1fr!important;gap:40px!important;padding-bottom:40px!important}
+  .ft-bottom{flex-wrap:wrap!important;gap:8px!important}
+
+  /* IMAGES */
+  .img-card img{height:220px!important;object-fit:cover!important;width:100%!important}
+  .img-grid-3{grid-template-columns:1fr 1fr!important}
   .img-grid-2{grid-template-columns:1fr 1fr!important}
 
   /* GALLERY MOSAIC */
@@ -288,56 +318,113 @@ body.menu-open{overflow:hidden!important}
   .gm-cell img{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important}
 
   /* WORK SAMPLES */
+  .workspace-section{padding:56px 6%!important}
   .ws-scroll{grid-template-columns:1fr 1fr!important;gap:12px!important}
-  .ws-item img{height:0!important;padding-bottom:75%!important;width:100%!important;object-fit:cover!important;position:relative!important}
+  .ws-item img{height:160px!important;object-fit:cover!important}
 
-  /* VIDEO */
-  .video-grid{grid-template-columns:1fr!important}
+  /* BLOG SECTION HEADINGS */
+  .sec-h{font-size:clamp(24px,4.5vw,40px)!important}
 }
 
 /* =====================================================
-   MOBILE  ≤ 480px
+   MOBILE  ≤ 768px  (catches most phones + small tablets)
    ===================================================== */
-@media(max-width:480px){
+@media(max-width:768px){
 
-  /* GLOBAL SPACING */
-  .ph{padding:68px 5% 48px!important}
-  .ph h1{font-size:clamp(24px,7vw,36px)!important}
-  .ph p{font-size:14px!important}
+  /* GLOBAL */
+  *{box-sizing:border-box!important}
+  body{overflow-x:hidden!important}
+
+  /* NAV */
+  .nav-inner{padding:0 5%!important}
+  .logo{font-size:19px!important}
 
   /* HERO */
-  .hero-left{padding:40px 5% 36px!important}
-  .hero h1{font-size:clamp(30px,9vw,44px)!important}
-  .hero-sub{font-size:14px!important}
+  .hero-left{padding:48px 5% 40px!important}
+  .hero h1{font-size:clamp(30px,8vw,46px)!important;line-height:1.15!important}
+  .hero-sub{font-size:14px!important;line-height:1.8!important}
   .hero-btns{flex-direction:column!important;gap:10px!important}
   .hero-btns .btn-green,
-  .hero-btns .btn-outline-green{width:100%!important;text-align:center!important;display:block!important}
+  .hero-btns .btn-outline-green{width:100%!important;text-align:center!important;justify-content:center!important;display:flex!important;align-items:center!important;box-sizing:border-box!important}
   .hero-stats{flex-wrap:wrap!important;gap:20px!important}
-  .stat-n{font-size:32px!important}
+  .stat-n{font-size:34px!important}
 
   /* TRUST STRIP */
-  .ts-logos{gap:20px!important;justify-content:center!important}
+  .trust-strip{padding:24px 5%!important}
+  .ts-inner{flex-direction:column!important;gap:12px!important;text-align:center!important}
+  .ts-div{display:none!important}
+  .ts-logos{gap:16px!important;justify-content:center!important;flex-wrap:wrap!important}
+
+  /* VISIONARIES */
+  .viz-carousel{max-height:none!important}
+  .viz-card-inner{padding:24px 20px!important}
+  .viz-title{font-size:clamp(20px,5vw,28px)!important}
+  .viz-body{font-size:13px!important}
 
   /* HOME SERVICES */
-  .hs-h{font-size:clamp(24px,7vw,36px)!important}
+  .home-services{padding:56px 5%!important}
+  .hs-grid{grid-template-columns:1fr!important}
   .hs-card{padding:28px 20px!important}
   .hs-card h3{font-size:20px!important}
-
-  /* PROCESS */
-  .hp-card{padding:28px 5%!important}
-  .hp-card h3{font-size:20px!important}
-  .hp-num{font-size:56px!important}
+  .hs-h{font-size:clamp(24px,6vw,34px)!important}
 
   /* HOME ABOUT */
   .ha-left{padding:48px 5%!important}
   .ha-h{font-size:clamp(22px,6vw,32px)!important}
+  .ha-p{font-size:14px!important}
 
-  /* CTA BAND */
-  .ctab-h{font-size:clamp(20px,6vw,28px)!important}
+  /* GALLERY */
+  .img-grid-3{grid-template-columns:1fr!important}
+  .img-grid-2{grid-template-columns:1fr!important}
+  .img-card img{height:220px!important}
+  .gallery-mosaic{grid-template-columns:1fr!important}
+  .gm-main{grid-column:1/-1!important;height:0!important;padding-bottom:60%!important;position:relative!important}
+  .gm-cell{height:0!important;padding-bottom:65%!important;position:relative!important}
+
+  /* BLOG PREVIEW HEADER */
+  .home-blog-header{flex-direction:column!important;align-items:flex-start!important;gap:16px!important}
+  .home-blog-header .btn-outline-green{align-self:flex-start!important}
+
+  /* BLOG PREVIEW GRID — 1 col */
+  .home-blog-grid{grid-template-columns:1fr!important}
+
+  /* VIDEO HEADER */
+  .video-header-grid{grid-template-columns:1fr!important;gap:16px!important}
+  .video-section{padding:56px 5%!important}
+  .video-header-grid{grid-template-columns:1fr!important;gap:16px!important}
+  .video-grid{grid-template-columns:1fr!important;gap:20px!important}
+  .video-feat{width:100%!important}
+  .video-side{gap:12px!important}
+  .vs-card{padding:12px!important}
+  .vs-thumb{width:72px!important;height:48px!important;flex-shrink:0!important}
+
+  /* PROCESS */
+  .home-process{padding:56px 5%!important}
+  .hp-grid{grid-template-columns:1fr!important}
+  .hp-card{padding:32px 5%!important}
+  .hp-card h3{font-size:20px!important}
+  .hp-num{font-size:56px!important}
+  .hp-header{margin-bottom:36px!important}
+
+  /* QUOTE */
+  .home-quote{padding:60px 5%!important}
+  .hq-text{font-size:clamp(17px,4vw,24px)!important}
+
+  /* CTA */
+  .cta-band{padding:48px 5%!important}
+  .ctab-h{font-size:clamp(20px,5.5vw,30px)!important}
   .ctab-p{font-size:13px!important}
+  .cta-band .btn-outline-white{width:100%!important;text-align:center!important;box-sizing:border-box!important;display:block!important}
+
+  /* PAGE HEADERS */
+  .ph{padding:80px 5% 48px!important}
+  .ph h1{font-size:clamp(24px,6.5vw,36px)!important}
+  .ph p{font-size:14px!important}
 
   /* SERVICES */
-  .svc-intro{padding:40px 5% 0!important}
+  .svc-intro{grid-template-columns:1fr!important;gap:24px!important;padding:40px 5% 0!important}
+  .svc-intro>div:last-child{grid-template-columns:1fr 1fr!important}
+  .svc-grid{grid-template-columns:1fr!important;padding:40px 5% 64px!important}
   .svc-card{padding:28px 20px!important}
   .svc-card h3{font-size:20px!important}
   .svc-card p{font-size:13px!important}
@@ -345,52 +432,138 @@ body.menu-open{overflow:hidden!important}
 
   /* PORTFOLIO */
   .port-stats{grid-template-columns:1fr 1fr!important}
-  .port-stat{padding:24px 16px!important}
-  .ps-num{font-size:32px!important}
+  .pst-item{padding:24px 16px!important}
+  .pst-num{font-size:36px!important}
+  .port-cases{padding:0 5% 48px!important}
+  .port-case{display:block!important}
+  .port-case>div:last-child{display:none!important}
+  .pc-content{padding:28px 20px!important}
+  .pc-content h3{font-size:22px!important}
+  .pc-results{flex-wrap:wrap!important}
+  .pc-res{flex:1 1 33%!important;padding:14px 10px!important}
 
   /* TESTIMONIALS */
-  .test-card{padding:32px 20px!important}
+  .test-grid{grid-template-columns:1fr!important;padding:0 5% 64px!important}
+  .tg-card{padding:28px 20px!important}
+
+  /* WORKSPACE */
+  .workspace-section{padding:48px 5%!important}
+  .ws-scroll{grid-template-columns:1fr 1fr!important;gap:10px!important}
+  .ws-item img{height:140px!important}
 
   /* ABOUT */
-  .ab-skills{grid-template-columns:1fr!important}
-  .av-grid{grid-template-columns:1fr 1fr!important}
+  .about-split{display:block!important}
+  .ab-left{min-height:260px!important;padding:40px 5%!important}
+  .ab-bg{font-size:120px!important}
+  .ab-card{padding:24px!important;max-width:100%!important}
+  .ab-card-name{font-size:22px!important}
+  .ab-right{padding:48px 5%!important}
+  .ab-right h2{font-size:clamp(24px,5.5vw,36px)!important}
+  .ab-right p{font-size:14px!important}
+  .ab-skills{grid-template-columns:1fr!important;gap:8px!important}
+  .av-section{padding:48px 5%!important}
+  .av-grid{grid-template-columns:1fr 1fr!important;gap:10px!important}
   .av-item{padding:24px 16px!important}
-
-  /* FAQ */
-  .faq-q{font-size:15px!important}
-  .faq-a{font-size:13px!important}
+  .av-num{font-size:32px!important}
 
   /* BLOG */
-  .blog-grid{grid-template-columns:1fr!important}
-  .blog-card-body{padding:20px!important}
-  .blog-card-title{font-size:18px!important}
+  .blog-hero-grid{grid-template-columns:1fr!important;padding:72px 5% 0!important}
+  .bfeat-vis{height:180px!important}
+  .bfeat-body{padding:24px!important}
+  .bfeat-body h3{font-size:20px!important}
+  .bside{display:grid!important;grid-template-columns:1fr!important}
+  .bside-card{padding:20px!important}
+  .blog-grid{grid-template-columns:1fr!important;padding:2px 5% 64px!important}
+  .bg-vis{height:100px!important}
+  .bg-body{padding:20px!important}
+  .bg-body h4{font-size:18px!important}
+  .blog-post-wrap{padding:48px 5% 64px!important}
+  .bp-title{font-size:clamp(26px,6vw,40px)!important}
+  .bp-img{height:220px!important}
 
   /* CONTACT */
-  .fg-label{font-size:10px!important}
-  .fg-input,.fg-textarea{font-size:14px!important;padding:12px 14px!important}
+  .contact-split{display:block!important;min-height:auto!important}
+  .ci-panel{padding:48px 5%!important}
+  .ci-panel h2{font-size:clamp(22px,5.5vw,32px)!important}
+  .ci-panel p{font-size:14px!important;margin-bottom:32px!important}
+  .cf-panel{padding:40px 5% 56px!important}
+  .cf-panel h3{font-size:24px!important}
+  .fg-row{grid-template-columns:1fr!important}
+  .fg input,.fg textarea,.fg select{font-size:16px!important} /* prevents iOS zoom */
+  .contact-split .btn-green{width:100%!important;text-align:center!important;box-sizing:border-box!important}
+
+  /* BOOK A CALL SECTION */
+  .book-call-stats{flex-direction:column!important;gap:16px!important}
+
+  /* FAQ */
+  .faq-wrap{grid-template-columns:1fr!important;gap:16px!important;padding:48px 5% 48px!important}
+  .faq-side{position:static!important}
+  .faq-side h2{font-size:clamp(22px,5.5vw,32px)!important}
+  .faq-q-text{font-size:15px!important}
+  .faq-a p{font-size:13px!important}
 
   /* FOOTER */
-  .ft-top{grid-template-columns:1fr!important}
-  .ft-bottom{flex-direction:column!important;text-align:center!important;gap:8px!important}
-  .ft-brand{font-size:20px!important}
+  .site-footer{padding:56px 5% 28px!important}
+  .ft-top{grid-template-columns:1fr 1fr!important;gap:28px!important;padding-bottom:32px!important}
+  .ft-tagline{font-size:12px!important;max-width:100%!important}
+  .ft-bottom{flex-wrap:wrap!important;gap:8px!important;font-size:10px!important}
 
-  /* IMAGES — always square, never distorted */
-  .img-card img{aspect-ratio:1/1!important;height:auto!important;object-fit:cover!important;width:100%!important}
-  .img-grid-3{grid-template-columns:1fr!important}
-  .img-grid-2{grid-template-columns:1fr!important}
+  /* PRIVACY */
+  .priv-wrap{padding:48px 5% 64px!important}
+  .priv-wrap h2{font-size:20px!important}
+  .priv-wrap p,.priv-wrap li{font-size:14px!important}
 
-  /* GALLERY — single column on small phones */
+  /* SECTION HEADINGS */
+  .sec-h{font-size:clamp(22px,5.5vw,36px)!important}
+  .ha-h{font-size:clamp(22px,5.5vw,32px)!important}
+}
+
+/* =====================================================
+   SMALL MOBILE  ≤ 480px
+   ===================================================== */
+@media(max-width:480px){
+
+  /* HERO */
+  .hero-left{padding:40px 5% 36px!important}
+  .hero h1{font-size:clamp(28px,9vw,40px)!important}
+  .hero-stats{gap:16px!important}
+  .stat-n{font-size:30px!important}
+  .stat-l{font-size:9px!important}
+
+  /* TRUST */
+  .ts-logo{font-size:13px!important}
+
+  /* SERVICES GRID — 1 col on small phones */
+  .svc-grid{grid-template-columns:1fr!important}
+
+  /* PORTFOLIO STATS — 2 col */
+  .port-stats{grid-template-columns:1fr 1fr!important}
+
+  /* TESTIMONIALS */
+  .test-grid{grid-template-columns:1fr!important}
+
+  /* ABOUT VALUES */
+  .av-grid{grid-template-columns:1fr!important}
+
+  /* FOOTER — single column */
+  .ft-top{grid-template-columns:1fr!important;gap:24px!important}
+  .ft-bottom{flex-direction:column!important;text-align:center!important;gap:6px!important}
+
+  /* IMAGES — single column */
+  .img-grid-3,.img-grid-2{grid-template-columns:1fr!important}
+
+  /* GALLERY — single column */
   .gallery-mosaic{grid-template-columns:1fr!important}
   .gm-main{grid-column:1/-1!important;padding-bottom:65%!important}
   .gm-cell{padding-bottom:65%!important}
 
-  /* WORK SAMPLES — single column */
-  .ws-scroll{grid-template-columns:1fr!important;gap:12px!important}
-  .ws-item img{padding-bottom:60%!important}
+  /* WORKSPACE — single column */
+  .ws-scroll{grid-template-columns:1fr!important;gap:10px!important}
 
-  /* SECTION HEADINGS — scale down gracefully */
-  .sec-h{font-size:clamp(22px,6vw,36px)!important}
-  .ha-h{font-size:clamp(22px,6vw,32px)!important}
+  /* SECTION HEADINGS */
+  .sec-h{font-size:clamp(20px,6vw,30px)!important}
+  .ha-h{font-size:clamp(20px,6vw,28px)!important}
+  .hs-h{font-size:clamp(20px,6vw,28px)!important}
 }
 
 img{max-width:100%;height:auto}
@@ -425,6 +598,15 @@ section.active{display:block}
 .ft-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:28px;font-size:11px;color:rgba(255,255,255,0.25);letter-spacing:0.05em;flex-wrap:wrap;gap:12px}
 .ft-bottom a{color:rgba(255,255,255,0.25);text-decoration:none}
 .ft-bottom a:hover{color:rgba(255,255,255,0.6)}
+.ft-social{display:flex;gap:10px;margin-top:20px}
+.ft-soc-link{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border:1px solid rgba(255,255,255,0.18);color:rgba(255,255,255,0.5);transition:all 0.2s;text-decoration:none;flex-shrink:0}
+.ft-soc-link:hover{background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.4);color:white}
+.ft-soc-link svg{width:15px;height:15px;fill:currentColor}
+/* Contact panel social icons */
+.ci-social{display:flex;gap:10px;margin-top:8px}
+.ci-soc-link{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid rgba(27,58,45,0.2);color:var(--mid);transition:all 0.2s;text-decoration:none;flex-shrink:0}
+.ci-soc-link:hover{background:var(--green);border-color:var(--green);color:white}
+.ci-soc-link svg{width:16px;height:16px;fill:currentColor}
 
 /* ===== HOME ===== */
 .hero{display:grid;grid-template-columns:1fr 1fr;min-height:calc(100vh - 72px);align-items:stretch;overflow:hidden}
@@ -856,7 +1038,7 @@ section.active{display:block}
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
 <script>
 var pageMeta={
-  home:{title:"Executive Virtual Assistant for US, UK & Global Businesses | Professional Administrative & Remote Support | InSyncEA",description:"Professional Executive Virtual Assistant providing expert executive support, email management, calendar coordination, travel planning and remote administrative support for US, UK and global businesses."},
+  home:{title:"Executive Virtual Assistant for CEOs & Founders | InSyncEA",description:"Executive Virtual Assistant for US, UK & global businesses. Expert email management, calendar coordination, travel planning and administrative support."},
   services:{title:"Executive Assistant Services | Calendar, Email, Travel & More | InSyncEA",description:"Professional Executive Assistant and Executive Virtual Assistant services including calendar management, email management, travel coordination, project management and financial support. Hire your EA today."},
   portfolio:{title:"Executive Assistant Portfolio & Case Studies | InSyncEA",description:"Real results from a professional Executive Assistant. See how InSyncEA has helped executives and business owners reclaim their time through expert EA and Executive Virtual Assistant services."},
   testimonials:{title:"Executive Assistant Reviews & Testimonials | InSyncEA",description:"Read what clients say about InSyncEA Executive Assistant and Executive Virtual Assistant services. Real testimonials from executives who have transformed how they work."},
@@ -1093,14 +1275,14 @@ function updatePageMeta(id){
   <!-- RECENT BLOG POSTS ON HOMEPAGE -->
   <div style="background:var(--offwhite);padding:96px 5%;border-top:1px solid var(--border)">
     <div style="max-width:1200px;margin:0 auto">
-      <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:48px">
+      <div class="home-blog-header" style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:48px">
         <div>
           <p class="sec-ey">From the Blog</p>
           <h2 class="sec-h">Insights on <em>Executive Support &amp; Remote Admin</em></h2>
         </div>
         <button onclick="show('blog')" class="btn-outline-green" style="white-space:nowrap">View All Posts</button>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border)">
+      <div class="home-blog-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border)">
         <div style="background:var(--white);padding:32px;cursor:pointer;transition:background 0.2s" onclick="show('blog');setTimeout(()=>showPost('post1'),50)" onmouseover="this.style.background='var(--green-light)'" onmouseout="this.style.background='var(--white)'">
           <div style="font-size:9px;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;font-weight:500">Executive Assistant Tips</div>
           <h4 style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--green);line-height:1.3;margin-bottom:10px">5 Signs You Need to Hire an Executive Assistant Right Now</h4>
@@ -1171,7 +1353,7 @@ function updatePageMeta(id){
   <!-- VIDEO SECTION -->
   <div class="video-section">
     <div class="video-inner">
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:0">
+      <div class="video-header-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:0">
         <div>
           <p class="hs-ey">Watch & Learn</p>
           <h2 class="hs-h">Executive Support &amp; <em style="color:var(--sage)">Administrative Skills, in Action</em></h2>
@@ -1273,7 +1455,7 @@ function updatePageMeta(id){
       <div class="ft-top">
         <div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Virtual Assistant &amp; Remote Executive Support Specialist. Helping leaders and founders operate at their absolute best.</p></div>
         <div><p class="ft-col-title">Pages</p><ul class="ft-links"><li onclick="show('services')">Services</li><li onclick="show('portfolio')">Portfolio</li><li onclick="show('about')">About</li><li onclick="show('blog')">Blog</li></ul></div>
-        <div><p class="ft-col-title">Connect</p><ul class="ft-links"><li onclick="show('contact')">Work With Me</li><li>LinkedIn</li><li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="59313c3535361930372a20373a743c38773a3634">[email&#160;protected]</a></li></ul></div>
+        <div><p class="ft-col-title">Connect</p><ul class="ft-links"><li onclick="show('contact')">Work With Me</li><li><a href="https://www.linkedin.com/in/wendymwende" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">LinkedIn</a></li></ul><div class="ft-social"><a href="https://www.linkedin.com/in/wendymwende" target="_blank" rel="noopener" aria-label="LinkedIn" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://x.com/InsyncEA" target="_blank" rel="noopener" aria-label="X / Twitter" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.261 5.636 5.903-5.636zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="https://www.facebook.com/ExecutivesAssistant/" target="_blank" rel="noopener" aria-label="Facebook" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a><a href="https://www.pinterest.com/InSyncEA/" target="_blank" rel="noopener" aria-label="Pinterest" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg></a></div></div>
         <div><p class="ft-col-title">Legal</p><ul class="ft-links"><li onclick="show('privacy')">Privacy Policy</li><li onclick="show('privacy')">Terms of Service</li></ul></div>
       </div>
       <div class="ft-bottom"><span>© 2026 InSyncEA. All rights reserved.</span><span>Executive Virtual Assistant · Remote Executive Support · USA &amp; UK</span></div>
@@ -1556,7 +1738,7 @@ function updatePageMeta(id){
     <p class="ctab-p">Book a free 30-minute consultation and I'll tell you exactly what would make the biggest difference for you right now.</p>
     <button class="btn-outline-white" onclick="show('contact')">Book a Free Consultation</button>
   </div>
-  <footer class="site-footer"><div class="ft-inner"><div class="ft-top"><div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Assistant & Operations Specialist.</p></div><div><p class="ft-col-title">Pages</p><ul class="ft-links"><li onclick="show('home')">Home</li><li onclick="show('portfolio')">Portfolio</li><li onclick="show('about')">About</li><li onclick="show('contact')">Contact</li></ul></div><div><p class="ft-col-title">Connect</p><ul class="ft-links"><li>LinkedIn</li><li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6008050c0c0f20090e13190e034d05014e030f0d">[email&#160;protected]</a></li></ul></div><div><p class="ft-col-title">Legal</p><ul class="ft-links"><li onclick="show('privacy')">Privacy Policy</li></ul></div></div><div class="ft-bottom"><span>© 2026 InSyncEA</span><span>Executive Assistant · Brooklyn, NY</span></div></div></footer>
+  <footer class="site-footer"><div class="ft-inner"><div class="ft-top"><div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Assistant & Operations Specialist.</p></div><div><p class="ft-col-title">Pages</p><ul class="ft-links"><li onclick="show('home')">Home</li><li onclick="show('portfolio')">Portfolio</li><li onclick="show('about')">About</li><li onclick="show('contact')">Contact</li></ul></div><div><p class="ft-col-title">Connect</p><ul class="ft-links"><li><a href="https://www.linkedin.com/in/wendymwende" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">LinkedIn</a></li></ul><div class="ft-social"><a href="https://www.linkedin.com/in/wendymwende" target="_blank" rel="noopener" aria-label="LinkedIn" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://x.com/InsyncEA" target="_blank" rel="noopener" aria-label="X / Twitter" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.261 5.636 5.903-5.636zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="https://www.facebook.com/ExecutivesAssistant/" target="_blank" rel="noopener" aria-label="Facebook" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a><a href="https://www.pinterest.com/InSyncEA/" target="_blank" rel="noopener" aria-label="Pinterest" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg></a></div></div><div><p class="ft-col-title">Legal</p><ul class="ft-links"><li onclick="show('privacy')">Privacy Policy</li></ul></div></div><div class="ft-bottom"><span>© 2026 InSyncEA</span><span>Executive Assistant · Brooklyn, NY</span></div></div></footer>
 </section>
 
 <!-- ===== PORTFOLIO ===== -->
@@ -1727,7 +1909,7 @@ function updatePageMeta(id){
     <p class="ctab-p">Let's talk about what's possible for your business.</p>
     <button class="btn-outline-white" onclick="show('contact')">Book a Free Consultation</button>
   </div>
-  <footer class="site-footer"><div class="ft-inner"><div class="ft-top"><div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Assistant.</p></div><div><p class="ft-col-title">Pages</p><ul class="ft-links"><li onclick="show('home')">Home</li><li onclick="show('services')">Services</li><li onclick="show('contact')">Contact</li></ul></div><div><p class="ft-col-title">Connect</p><ul class="ft-links"><li>LinkedIn</li><li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="94fcf1f8f8fbd4fdfae7edfaf7b9f1f5baf7fbf9">[email&#160;protected]</a></li></ul></div><div><p class="ft-col-title">Legal</p><ul class="ft-links"><li onclick="show('privacy')">Privacy Policy</li></ul></div></div><div class="ft-bottom"><span>© 2026 InSyncEA</span></div></div></footer>
+  <footer class="site-footer"><div class="ft-inner"><div class="ft-top"><div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Assistant.</p></div><div><p class="ft-col-title">Pages</p><ul class="ft-links"><li onclick="show('home')">Home</li><li onclick="show('services')">Services</li><li onclick="show('contact')">Contact</li></ul></div><div><p class="ft-col-title">Connect</p><ul class="ft-links"><li><a href="https://www.linkedin.com/in/wendymwende" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">LinkedIn</a></li></ul><div class="ft-social"><a href="https://www.linkedin.com/in/wendymwende" target="_blank" rel="noopener" aria-label="LinkedIn" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://x.com/InsyncEA" target="_blank" rel="noopener" aria-label="X / Twitter" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.261 5.636 5.903-5.636zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="https://www.facebook.com/ExecutivesAssistant/" target="_blank" rel="noopener" aria-label="Facebook" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a><a href="https://www.pinterest.com/InSyncEA/" target="_blank" rel="noopener" aria-label="Pinterest" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg></a></div></div><div><p class="ft-col-title">Legal</p><ul class="ft-links"><li onclick="show('privacy')">Privacy Policy</li></ul></div></div><div class="ft-bottom"><span>© 2026 InSyncEA</span></div></div></footer>
 </section>
 
 <!-- ===== ABOUT ===== -->
@@ -1823,7 +2005,7 @@ function updatePageMeta(id){
     <p class="ctab-p">I'd love to learn about your business and how I can help you operate at your very best.</p>
     <button class="btn-outline-white" onclick="show('contact')">Book a Free Consultation</button>
   </div>
-  <footer class="site-footer"><div class="ft-inner"><div class="ft-top"><div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Assistant & Operations Specialist.</p></div><div><p class="ft-col-title">Pages</p><ul class="ft-links"><li onclick="show('services')">Services</li><li onclick="show('portfolio')">Portfolio</li><li onclick="show('contact')">Contact</li></ul></div><div><p class="ft-col-title">Connect</p><ul class="ft-links"><li>LinkedIn</li><li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ddb5b8b1b1b29db4b3aea4b3bef0b8bcf3beb2b0">[email&#160;protected]</a></li></ul></div><div><p class="ft-col-title">Legal</p><ul class="ft-links"><li onclick="show('privacy')">Privacy Policy</li></ul></div></div><div class="ft-bottom"><span>© 2026 InSyncEA</span></div></div></footer>
+  <footer class="site-footer"><div class="ft-inner"><div class="ft-top"><div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Assistant & Operations Specialist.</p></div><div><p class="ft-col-title">Pages</p><ul class="ft-links"><li onclick="show('services')">Services</li><li onclick="show('portfolio')">Portfolio</li><li onclick="show('contact')">Contact</li></ul></div><div><p class="ft-col-title">Connect</p><ul class="ft-links"><li><a href="https://www.linkedin.com/in/wendymwende" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">LinkedIn</a></li></ul><div class="ft-social"><a href="https://www.linkedin.com/in/wendymwende" target="_blank" rel="noopener" aria-label="LinkedIn" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://x.com/InsyncEA" target="_blank" rel="noopener" aria-label="X / Twitter" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.261 5.636 5.903-5.636zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="https://www.facebook.com/ExecutivesAssistant/" target="_blank" rel="noopener" aria-label="Facebook" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a><a href="https://www.pinterest.com/InSyncEA/" target="_blank" rel="noopener" aria-label="Pinterest" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg></a></div></div><div><p class="ft-col-title">Legal</p><ul class="ft-links"><li onclick="show('privacy')">Privacy Policy</li></ul></div></div><div class="ft-bottom"><span>© 2026 InSyncEA</span></div></div></footer>
 </section>
 
 <!-- ===== BLOG ===== -->
@@ -1889,7 +2071,7 @@ function updatePageMeta(id){
     </div>
   </div>
 
-  <footer class="site-footer"><div class="ft-inner"><div class="ft-top"><div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Assistant & Operations Specialist.</p></div><div><p class="ft-col-title">Pages</p><ul class="ft-links"><li onclick="show('home')">Home</li><li onclick="show('services')">Services</li><li onclick="show('contact')">Contact</li></ul></div><div><p class="ft-col-title">Connect</p><ul class="ft-links"><li>LinkedIn</li><li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="adc5c8c1c1c2edc4c3ded4c3ce80c8cc83cec2c0">[email&#160;protected]</a></li></ul></div><div><p class="ft-col-title">Legal</p><ul class="ft-links"><li onclick="show('privacy')">Privacy Policy</li></ul></div></div><div class="ft-bottom"><span>© 2026 InSyncEA</span></div></div></footer>
+  <footer class="site-footer"><div class="ft-inner"><div class="ft-top"><div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Assistant & Operations Specialist.</p></div><div><p class="ft-col-title">Pages</p><ul class="ft-links"><li onclick="show('home')">Home</li><li onclick="show('services')">Services</li><li onclick="show('contact')">Contact</li></ul></div><div><p class="ft-col-title">Connect</p><ul class="ft-links"><li><a href="https://www.linkedin.com/in/wendymwende" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">LinkedIn</a></li></ul><div class="ft-social"><a href="https://www.linkedin.com/in/wendymwende" target="_blank" rel="noopener" aria-label="LinkedIn" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://x.com/InsyncEA" target="_blank" rel="noopener" aria-label="X / Twitter" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.261 5.636 5.903-5.636zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="https://www.facebook.com/ExecutivesAssistant/" target="_blank" rel="noopener" aria-label="Facebook" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a><a href="https://www.pinterest.com/InSyncEA/" target="_blank" rel="noopener" aria-label="Pinterest" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg></a></div></div><div><p class="ft-col-title">Legal</p><ul class="ft-links"><li onclick="show('privacy')">Privacy Policy</li></ul></div></div><div class="ft-bottom"><span>© 2026 InSyncEA</span></div></div></footer>
 </section>
 
 <!-- ===== CONTACT ===== -->
@@ -1903,7 +2085,13 @@ function updatePageMeta(id){
         <div class="ci-item"><div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><div class="ci-lbl">Email</div><div class="ci-val"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="78101d1414173811160b01161b551d19561b1715">[email&#160;protected]</a></div></div></div>
         <div class="ci-item"><div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="ci-lbl">Location</div><div class="ci-val">Brooklyn, NY · Available Globally</div></div></div>
         <div class="ci-item"><div class="ci-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><div class="ci-lbl">Response Time</div><div class="ci-val">Within 24 hours, always</div></div></div>
-        <div class="ci-item"><div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div><div><div class="ci-lbl">LinkedIn</div><div class="ci-val">linkedin.com/in/insync-ea</div></div></div>
+        <div class="ci-item"><div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div><div><div class="ci-lbl">LinkedIn</div><div class="ci-val"><a href="https://www.linkedin.com/in/wendymwende" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">linkedin.com/in/wendymwende</a></div></div></div>
+      </div>
+      <div class="ci-social">
+        <a href="https://www.linkedin.com/in/wendymwende" target="_blank" rel="noopener" aria-label="LinkedIn" class="ci-soc-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="https://x.com/InsyncEA" target="_blank" rel="noopener" aria-label="X / Twitter" class="ci-soc-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.261 5.636 5.903-5.636zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        <a href="https://www.facebook.com/ExecutivesAssistant/" target="_blank" rel="noopener" aria-label="Facebook" class="ci-soc-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+        <a href="https://www.pinterest.com/InSyncEA/" target="_blank" rel="noopener" aria-label="Pinterest" class="ci-soc-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg></a>
       </div>
     </div>
     <div class="cf-panel">
@@ -1939,7 +2127,7 @@ function updatePageMeta(id){
       <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:32px">
         <a href="https://calendly.com/your-link" target="_blank" rel="noopener noreferrer" class="btn-green" style="display:inline-block;text-decoration:none;padding:16px 40px">Book on Calendly</a>
       </div>
-      <div style="display:flex;justify-content:center;gap:40px;flex-wrap:wrap">
+      <div class="book-call-stats" style="display:flex;justify-content:center;gap:40px;flex-wrap:wrap">
         <div style="text-align:center">
           <div style="font-family:'Cormorant Garamond',serif;font-size:32px;color:var(--green);font-weight:300">30</div>
           <div style="font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--soft);font-weight:400">Minutes</div>
@@ -1956,7 +2144,7 @@ function updatePageMeta(id){
       <p style="font-size:11px;color:var(--soft);margin-top:28px;font-weight:300;line-height:1.6">Currently accepting new clients · <span style="color:var(--green)">Limited spots available</span><br><em>Update the Calendly link in the HTML to point to your scheduling page</em></p>
     </div>
   </div>
-  <footer class="site-footer"><div class="ft-inner"><div class="ft-top"><div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Assistant & Operations Specialist.</p></div><div><p class="ft-col-title">Pages</p><ul class="ft-links"><li onclick="show('home')">Home</li><li onclick="show('services')">Services</li><li onclick="show('about')">About</li></ul></div><div><p class="ft-col-title">Connect</p><ul class="ft-links"><li>LinkedIn</li><li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d9b1bcb5b5b699b0b7aaa0b7baf4bcb8f7bab6b4">[email&#160;protected]</a></li></ul></div><div><p class="ft-col-title">Legal</p><ul class="ft-links"><li onclick="show('privacy')">Privacy Policy</li></ul></div></div><div class="ft-bottom"><span>© 2026 InSyncEA</span></div></div></footer>
+  <footer class="site-footer"><div class="ft-inner"><div class="ft-top"><div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Assistant & Operations Specialist.</p></div><div><p class="ft-col-title">Pages</p><ul class="ft-links"><li onclick="show('home')">Home</li><li onclick="show('services')">Services</li><li onclick="show('about')">About</li></ul></div><div><p class="ft-col-title">Connect</p><ul class="ft-links"><li><a href="https://www.linkedin.com/in/wendymwende" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">LinkedIn</a></li></ul><div class="ft-social"><a href="https://www.linkedin.com/in/wendymwende" target="_blank" rel="noopener" aria-label="LinkedIn" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://x.com/InsyncEA" target="_blank" rel="noopener" aria-label="X / Twitter" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.261 5.636 5.903-5.636zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="https://www.facebook.com/ExecutivesAssistant/" target="_blank" rel="noopener" aria-label="Facebook" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a><a href="https://www.pinterest.com/InSyncEA/" target="_blank" rel="noopener" aria-label="Pinterest" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg></a></div></div><div><p class="ft-col-title">Legal</p><ul class="ft-links"><li onclick="show('privacy')">Privacy Policy</li></ul></div></div><div class="ft-bottom"><span>© 2026 InSyncEA</span></div></div></footer>
 </section>
 
 <!-- ===== PRIVACY ===== -->
@@ -2029,7 +2217,7 @@ function updatePageMeta(id){
       <li>Location:USA</li>
     </ul>
   </div>
-  <footer class="site-footer"><div class="ft-inner"><div class="ft-top"><div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Assistant & Operations Specialist.</p></div><div><p class="ft-col-title">Pages</p><ul class="ft-links"><li onclick="show('home')">Home</li><li onclick="show('services')">Services</li><li onclick="show('contact')">Contact</li></ul></div><div><p class="ft-col-title">Connect</p><ul class="ft-links"><li>LinkedIn</li><li><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="99f1fcf5f5f6d9f0f7eae0f7fab4fcf8b7faf6f4">[email&#160;protected]</a></li></ul></div><div><p class="ft-col-title">Legal</p><ul class="ft-links"><li onclick="show('privacy')">Privacy Policy</li></ul></div></div><div class="ft-bottom"><span>© 2026 InSyncEA · <a onclick="show('privacy')">Privacy Policy</a></span></div></div></footer>
+  <footer class="site-footer"><div class="ft-inner"><div class="ft-top"><div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Assistant & Operations Specialist.</p></div><div><p class="ft-col-title">Pages</p><ul class="ft-links"><li onclick="show('home')">Home</li><li onclick="show('services')">Services</li><li onclick="show('contact')">Contact</li></ul></div><div><p class="ft-col-title">Connect</p><ul class="ft-links"><li><a href="https://www.linkedin.com/in/wendymwende" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">LinkedIn</a></li></ul><div class="ft-social"><a href="https://www.linkedin.com/in/wendymwende" target="_blank" rel="noopener" aria-label="LinkedIn" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://x.com/InsyncEA" target="_blank" rel="noopener" aria-label="X / Twitter" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.261 5.636 5.903-5.636zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="https://www.facebook.com/ExecutivesAssistant/" target="_blank" rel="noopener" aria-label="Facebook" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a><a href="https://www.pinterest.com/InSyncEA/" target="_blank" rel="noopener" aria-label="Pinterest" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg></a></div></div><div><p class="ft-col-title">Legal</p><ul class="ft-links"><li onclick="show('privacy')">Privacy Policy</li></ul></div></div><div class="ft-bottom"><span>© 2026 InSyncEA · <a onclick="show('privacy')">Privacy Policy</a></span></div></div></footer>
 </section>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
