@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Executive Assistant Services | Calendar, Email, Travel &amp; More | InSyncEA</title>
+<meta name="description" content="Professional Executive Assistant and Executive Virtual Assistant services including calendar management, email management, travel coordination, project management and financial support. Hire your EA today.">
+<meta name="keywords" content="executive assistant USA, executive assistant UK, virtual executive assistant London, virtual executive assistant New York, hire executive assistant USA, executive virtual assistant UK, EA services for CEOs, executive assistant for founders, executive assistant Los Angeles, executive assistant Chicago, executive assistant Houston, executive assistant Manchester, executive assistant Birmingham, remote executive assistant USA, remote executive assistant UK, online executive assistant, inbox management, calendar management, travel coordination, executive support">
+<!-- Geo targeting -->
+<meta name="geo.region" content="US">
+<meta name="geo.region" content="GB">
+<meta name="geo.placename" content="New York, London, Los Angeles, Chicago, Houston, Manchester, Birmingham">
+<meta name="ICBM" content="40.7128,-74.0060">
+<link rel="alternate" hreflang="en-us" href="https://insyncea.com/services/">
+<link rel="alternate" hreflang="en-gb" href="https://insyncea.com/services/">
+<meta name="theme-color" content="#1B3A2D">
+<meta name="robots" content="index, follow">
+<meta name="author" content="InSyncEA">
+<meta property="og:title" content="Executive Assistant Services | Calendar, Email, Travel &amp; More | InSyncEA">
+<meta property="og:description" content="Professional Executive Assistant and Executive Virtual Assistant services including calendar management, email management, travel coordination, project management and financial support. Hire your EA today.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://insyncea.com/services/">
+<meta property="og:site_name" content="InSyncEA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Executive Assistant Services | Calendar, Email, Travel &amp; More | InSyncEA">
+<meta name="twitter:description" content="Professional Executive Assistant and Executive Virtual Assistant services including calendar management, email management, travel coordination, project management and financial support. Hire your EA today.">
+<link rel="canonical" href="https://insyncea.com/services/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "InSyncEA",
+  "description": "Premium Executive Assistant and Executive Virtual Assistant services for CEOs, founders, and executives in the USA and UK. Specialising in calendar management, email management, travel coordination, project management, and financial support.",
+  "url": "https://insyncea.com",
+  "logo": "https://insyncea.com/logo.png",
+  "serviceType": ["Executive Assistant", "Executive Virtual Assistant", "Virtual Assistant"],
+  "areaServed": [
+    {"@type": "City", "name": "New York", "sameAs": "https://www.wikidata.org/wiki/Q60"},
+    {"@type": "City", "name": "Los Angeles", "sameAs": "https://www.wikidata.org/wiki/Q65"},
+    {"@type": "City", "name": "Chicago", "sameAs": "https://www.wikidata.org/wiki/Q1297"},
+    {"@type": "City", "name": "Houston", "sameAs": "https://www.wikidata.org/wiki/Q16555"},
+    {"@type": "City", "name": "London", "sameAs": "https://www.wikidata.org/wiki/Q84"},
+    {"@type": "City", "name": "Manchester", "sameAs": "https://www.wikidata.org/wiki/Q18125"},
+    {"@type": "City", "name": "Birmingham", "sameAs": "https://www.wikidata.org/wiki/Q2256"}
+  ],
+  "availableLanguage": "English",
+  "priceRange": "$$",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Executive Assistant Services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Calendar & Schedule Management", "description": "Organise and manage daily, weekly, and monthly calendars for executives"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Communication & Email Management", "description": "Screen, prioritise, and respond to emails on behalf of executives"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Travel & Logistics", "description": "Research, book, and coordinate flights, hotels, and transportation"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Project & Task Management", "description": "Track deadlines, milestones, and deliverables for executive clients"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Financial & Administrative Support", "description": "Manage expense reports, invoicing, and budgeting tasks"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Meeting Preparation & Follow-Up", "description": "Prepare agendas, take minutes, and follow up on action items"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Research & Reporting", "description": "Conduct research on industry trends, competitors, and opportunities"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Shopify Store Management", "description": "Product uploads, order tracking, and inventory management"}}
+    ]
+  },
+  "sameAs": [
+    "https://linkedin.com/in/wendymwende"
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<!-- NAV -->
+<nav>
+  <div class="nav-inner" style="display:flex;align-items:center;justify-content:space-between;gap:0">
+    <a class="logo" href="/" style="text-decoration:none">InSync<em>EA</em></a>
+    <ul class="nav-links">
+      <li><a href="/" id="n-home">Home</a></li>
+      <li><a href="/services/" id="n-services" class="active">Services</a></li>
+      <li><a href="/portfolio/" id="n-portfolio">Portfolio</a></li>
+      <li><a href="/about/" id="n-about">About</a></li>
+      <li><a href="/blog/" id="n-blog">Blog</a></li>
+      <li><a href="/contact/" id="n-contact">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="/contact/" style="display:inline-block;text-decoration:none;text-align:center">Work With Me</a>
+    <button class="hamburger" id="hamburger" onclick="openMobileMenu()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU BACKDROP -->
+<div class="mobile-menu-backdrop" id="mobileBackdrop" onclick="closeMobileMenu()"></div>
+
+<!-- MOBILE DRAWER -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Site navigation">
+  <div class="mobile-menu-header">
+    <span class="mobile-menu-logo">InSync<em>EA</em></span>
+    <button class="mobile-menu-close" onclick="closeMobileMenu()" aria-label="Close menu">&#10005;</button>
+  </div>
+  <nav class="mobile-menu-nav">
+    <a href="/">Home</a>
+    <a href="/services/">Services</a>
+    <a href="/portfolio/">Portfolio</a>
+    <a href="/about/">About</a>
+    <a href="/blog/">Blog</a>
+    <a href="/contact/">Contact</a>
+  </nav>
+  <div class="mobile-menu-footer">
+    <a class="btn-outline-white" href="/contact/" style="display:inline-block;text-decoration:none;text-align:center">Work With Me</a>
+    <p class="mobile-menu-tagline">Executive Assistant &middot; USA &amp; UK</p>
+  </div>
+</div>
+
+<!-- ===== SERVICES ===== -->
+<section id="services">
+
+  <div class="ph">
+    <p class="ey">Executive Assistant Services</p>
+    <h2>Executive Virtual Assistant &amp; Remote Support Services</h2>
+    <p>Every executive support service I offer is designed around a single goal — removing the operational weight so you can focus entirely on what moves your business forward.</p>
+  </div>
+  <div class="svc-intro">
+    <div>
+      <p class="sec-ey">My Approach</p>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(26px,3vw,42px);font-weight:300;color:var(--ink);line-height:1.2;margin-bottom:20px">Not just tasks — <em style="color:var(--green);font-style:italic">strategic executive support</em></h2>
+      <p style="font-size:15px;color:var(--mid);line-height:1.9;font-weight:300">As your remote Executive Assistant, I don't operate like a task-taker. I think ahead, anticipate needs, and build systems that make your entire operation run smoother — whether you need part-time executive support or a full operational partner.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div style="background:var(--green-light);padding:28px;border-left:2px solid var(--green)"><div style="font-family:'Cormorant Garamond',serif;font-size:36px;color:var(--green);font-weight:300">500+</div><div style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--soft);margin-top:4px">Hours saved for clients</div></div>
+      <div style="background:var(--green-light);padding:28px;border-left:2px solid var(--green)"><div style="font-family:'Cormorant Garamond',serif;font-size:36px;color:var(--green);font-weight:300">98%</div><div style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--soft);margin-top:4px">Client satisfaction</div></div>
+      <div style="background:var(--green-light);padding:28px;border-left:2px solid var(--green)"><div style="font-family:'Cormorant Garamond',serif;font-size:36px;color:var(--green);font-weight:300">15+</div><div style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--soft);margin-top:4px">Clients supported</div></div>
+      <div style="background:var(--green-light);padding:28px;border-left:2px solid var(--green)"><div style="font-family:'Cormorant Garamond',serif;font-size:36px;color:var(--green);font-weight:300">NDA</div><div style="font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--soft);margin-top:4px">Protected always</div></div>
+    </div>
+  </div>
+  
+  <div style="max-width:1200px;margin:0 auto;padding:0 5% 48px">
+    <div class="img-grid-3">
+      <div class="img-card">
+        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80" loading="lazy" decoding="async" alt="Executive assistant calendar management and scheduling service"/>
+        <div class="img-card-overlay"><span class="img-card-label">Calendar Mastery</span></div>
+      </div>
+      <div class="img-card">
+        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&q=80" loading="lazy" decoding="async" alt="Remote executive assistant email and communications management"/>
+        <div class="img-card-overlay"><span class="img-card-label">Communications</span></div>
+      </div>
+      <div class="img-card">
+        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&q=80" loading="lazy" decoding="async" alt="Executive assistant business travel coordination and logistics"/>
+        <div class="img-card-overlay"><span class="img-card-label">Travel & Logistics</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width:1200px;margin:0 auto;padding:0 5% 40px;text-align:center">
+    <p style="font-size:14px;color:var(--soft);font-weight:300">Want to see these services in practice? <a href="/portfolio/" style="color:var(--green);text-decoration:none;border-bottom:1px solid currentColor">Read real client case studies &rarr;</a></p>
+  </div>
+
+  <div class="svc-grid">
+    <div class="svc-card">
+      <div class="svc-pop">Most Popular</div>
+      <div class="svc-num">01</div>
+      <h3>Calendar & Schedule Management</h3>
+      <p>Your calendar is your most powerful business asset. I design and manage a calendar system that reflects your actual priorities, protects your focus time, and ensures you are always prepared and never double-booked.</p>
+      <ul class="svc-list">
+        <li>Organise and manage daily, weekly, and monthly calendars</li>
+        <li>Schedule and confirm meetings, calls, and events</li>
+        <li>Prioritise appointments and manage conflicts</li>
+        <li>Cross-timezone scheduling with precision</li>
+        <li>Send reminders and follow-ups to ensure punctuality</li>
+      </ul>
+      <p style="margin-top:16px;font-size:13px;font-weight:300"><a href="/blog/the-calendar-audit-every-busy-executive-should-do/" style="color:var(--green);text-decoration:none">&rarr; Read: The Calendar Audit Every Busy Executive Should Do</a></p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-num">02</div>
+      <h3>Communication & Email Management</h3>
+      <p>I manage your inbox to zero every day, responding, triaging, and drafting communications in your voice so nothing important is ever missed, delayed, or left unanswered.</p>
+      <ul class="svc-list">
+        <li>Screen, prioritise, and respond to emails on your behalf</li>
+        <li>Draft professional correspondence, letters, memos, and emails</li>
+        <li>Handle phone calls, messages, and inquiries</li>
+        <li>Maintain clear communication with teams, clients, and partners</li>
+        <li>Stakeholder communication tracking and follow-up systems</li>
+      </ul>
+      <p style="margin-top:16px;font-size:13px;font-weight:300"><a href="/blog/why-inbox-zero-is-a-mindset-not-a-number/" style="color:var(--green);text-decoration:none">&rarr; Read: Why Inbox Zero Is a Mindset, Not a Number</a></p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-num">03</div>
+      <h3>Travel & Logistics</h3>
+      <p>From local meetings to international conferences and multi-city tours, I handle every detail of your travel so you arrive calm, fully briefed, and ready to perform.</p>
+      <ul class="svc-list">
+        <li>Research, book, and coordinate flights, hotels, and transportation</li>
+        <li>Prepare detailed travel itineraries and manage last-minute changes</li>
+        <li>Arrange visa applications and travel documentation</li>
+        <li>Comprehensive trip briefing documents for every journey</li>
+        <li>Real-time support and contingency planning during travel</li>
+      </ul>
+      <p style="margin-top:16px;font-size:13px;font-weight:300"><a href="/blog/how-to-prepare-a-perfect-executive-travel-brief/" style="color:var(--green);text-decoration:none">&rarr; Read: How to Prepare a Perfect Executive Travel Brief</a></p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-num">04</div>
+      <h3>Project & Task Management</h3>
+      <p>I keep your projects on track and your team aligned, coordinating moving parts across internal teams and external partners so deadlines are always met and nothing falls through.</p>
+      <ul class="svc-list">
+        <li>Track deadlines, milestones, and deliverables</li>
+        <li>Coordinate with internal teams and external partners</li>
+        <li>Prepare progress reports and status updates</li>
+        <li>Manage project timelines and flag risks early</li>
+        <li>Keep all stakeholders informed and accountable</li>
+      </ul>
+      <p style="margin-top:16px;font-size:13px;font-weight:300"><a href="/blog/how-to-delegate-without-losing-control/" style="color:var(--green);text-decoration:none">&rarr; Read: How to Delegate Without Losing Control</a></p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-num">05</div>
+      <h3>Financial & Administrative Support</h3>
+      <p>I take the admin out of your finances, keeping your expenses organised, invoices tracked, and recurring payments managed so your bookkeeper is always happy and you are never caught off guard.</p>
+      <ul class="svc-list">
+        <li>Manage expense reports and reimbursements</li>
+        <li>Handle invoicing, billing, and budgeting tasks</li>
+        <li>Track subscriptions, memberships, and recurring payments</li>
+        <li>Receipt organisation and financial file management</li>
+        <li>Liaison with accountants and bookkeepers</li>
+      </ul>
+    </div>
+    <div class="svc-card">
+      <div class="svc-num">06</div>
+      <h3>Meeting Preparation & Follow-Up</h3>
+      <p>Every meeting you walk into, you walk in prepared. Every meeting you leave, every action item is captured and followed through. I handle both ends so nothing is ever lost or forgotten.</p>
+      <ul class="svc-list">
+        <li>Prepare agendas, presentations, and briefing notes</li>
+        <li>Ensure all materials are ready and distributed ahead of time</li>
+        <li>Take detailed meeting minutes and action item logs</li>
+        <li>Follow up with attendees on outstanding action items</li>
+        <li>Post-meeting summaries and decision documentation</li>
+      </ul>
+    </div>
+    <div class="svc-card">
+      <div class="svc-num">07</div>
+      <h3>Research & Reporting</h3>
+      <p>Whether you need market intelligence, competitor analysis, or a briefing document before an important meeting, I deliver thorough, clear, and actionable research that saves you hours.</p>
+      <ul class="svc-list">
+        <li>Conduct research on industry trends and opportunities</li>
+        <li>Competitor analysis and market summaries</li>
+        <li>Compile data and present findings in clean reports</li>
+        <li>Prepare talking points and briefing materials for meetings</li>
+        <li>Supplier, vendor, and partner vetting research</li>
+      </ul>
+    </div>
+    <div class="svc-card">
+      <div class="svc-num">08</div>
+      <h3>Document & File Management</h3>
+      <p>A well-organised filing system is the foundation of a well-run business. I create, maintain, and protect your documents, both digital and physical, so everything is findable in seconds.</p>
+      <ul class="svc-list">
+        <li>Organise and maintain digital and physical files</li>
+        <li>Draft contracts, agreements, and proposals as needed</li>
+        <li>Create polished presentations and formatted reports</li>
+        <li>Proofread and edit documents for accuracy and tone</li>
+        <li>Ensure confidential documents are stored securely</li>
+      </ul>
+    </div>
+    <div class="svc-card">
+      <div class="svc-num">09</div>
+      <h3>Client Relationship Management</h3>
+      <p>Your relationships are your most valuable business asset. I help you nurture and maintain them with consistent, thoughtful, and professional touchpoints that keep clients, partners, and stakeholders engaged.</p>
+      <ul class="svc-list">
+        <li>Manage client and partner follow-ups and relationship touchpoints</li>
+        <li>Coordinate gifts, thank-you notes, and acknowledgments</li>
+        <li>Plan and execute professional or social events</li>
+        <li>Maintain CRM databases and contact records</li>
+        <li>Track key relationship milestones and anniversaries</li>
+      </ul>
+    </div>
+    <div class="svc-card">
+      <div class="svc-num">10</div>
+      <h3>Technology & Tools Support</h3>
+      <p>I am proficient across the tools that modern executives rely on and can set up, manage, and optimise your digital workspace so your tech works for you, not against you.</p>
+      <ul class="svc-list">
+        <li>Google Workspace, Microsoft 365, Slack, Notion, and more</li>
+        <li>Set up and manage collaborative platforms and project tools</li>
+        <li>Troubleshoot minor tech and platform issues</li>
+        <li>Onboard team members to new tools and workflows</li>
+        <li>Automate repetitive tasks to save time across your operation</li>
+      </ul>
+    </div>
+    <div class="svc-card">
+      <div class="svc-num">11</div>
+      <h3>Personal Assistance</h3>
+      <p>When life and work blur together, I step in. From personal appointments to lifestyle coordination, I handle the personal layer of your life with the same discretion and care I bring to your business.</p>
+      <ul class="svc-list">
+        <li>Manage personal appointments, errands, and reminders</li>
+        <li>Coordinate household or lifestyle management tasks</li>
+        <li>Gift research, purchasing, and delivery coordination</li>
+        <li>Personal event planning and RSVP management</li>
+        <li>Any personal task agreed on a case-by-case basis</li>
+      </ul>
+    </div>
+    <div class="svc-card">
+      <div class="svc-num">12</div>
+      <h3>Shopify Store Management</h3>
+      <p>From product listings to order management, I keep your Shopify store running smoothly and professionally so you can focus on growing the business, not administering it.</p>
+      <ul class="svc-list">
+        <li>Product uploads, descriptions, and tagging</li>
+        <li>Order tracking and fulfilment coordination</li>
+        <li>Inventory monitoring and low-stock alerts</li>
+        <li>Customer enquiry management and response</li>
+        <li>Basic store updates, content edits, and seasonal changes</li>
+      </ul>
+    </div>
+    <div class="svc-card">
+      <div class="svc-num">13</div>
+      <h3>General Admin Tasks</h3>
+      <p>The day-to-day administrative work that keeps your business running smoothly. I handle the full spectrum of general admin with precision so you can focus on growth.</p>
+      <ul class="svc-list">
+        <li>Data entry, filing, and record management</li>
+        <li>Supplier and vendor correspondence</li>
+        <li>Managing subscriptions and renewals</li>
+        <li>General scheduling and coordination support</li>
+        <li>Any routine admin task agreed on engagement</li>
+      </ul>
+    </div>
+    <div class="svc-card">
+      <div class="svc-num">14</div>
+      <h3>System Set-Up</h3>
+      <p>I design and build the operational systems your business needs to function at its best. Your tools and platforms will finally work the way they should.</p>
+      <ul class="svc-list">
+        <li>Notion, Asana, ClickUp, and Monday.com setup</li>
+        <li>CRM configuration and workflow design</li>
+        <li>Google Workspace and Microsoft 365 organisation</li>
+        <li>SOP creation and process documentation</li>
+        <li>Team onboarding to new systems and workflows</li>
+      </ul>
+    </div>
+    <div class="svc-card">
+      <div class="svc-num">15</div>
+      <h3>Website Maintenance</h3>
+      <p>Keep your website up-to-date and functioning perfectly so your online presence always reflects your brand at its best.</p>
+      <ul class="svc-list">
+        <li>Content updates, blog posts, and page edits</li>
+        <li>Image uploads and media management</li>
+        <li>Broken link checks and basic troubleshooting</li>
+        <li>WordPress, Squarespace, and Wix updates</li>
+        <li>Coordinate with developers on technical issues</li>
+      </ul>
+    </div>
+    <div class="svc-card">
+      <div class="svc-num">16</div>
+      <h3>Minutes Taking</h3>
+      <p>Accurate, well-structured meeting minutes that capture every decision and action item so nothing is ever lost or forgotten after a meeting ends.</p>
+      <ul class="svc-list">
+        <li>Real-time note-taking during live meetings</li>
+        <li>Formatted minutes delivered within 24 hours</li>
+        <li>Action item tracking and follow-up</li>
+        <li>Board meeting and committee minutes</li>
+        <li>Audio and video transcription services</li>
+      </ul>
+    </div>
+    <div class="svc-card">
+      <div class="svc-num">17</div>
+      <h3>Book Keeping</h3>
+      <p>Organised, accurate financial records that keep your business compliant and your accountant happy. I manage the day-to-day bookkeeping so your finances are always in order.</p>
+      <ul class="svc-list">
+        <li>Expense tracking and categorisation</li>
+        <li>Invoice management and payment follow-ups</li>
+        <li>Bank reconciliation and statement organisation</li>
+        <li>Receipt management and expense reporting</li>
+        <li>Liaison with accountants and finance teams</li>
+      </ul>
+    </div>
+    <div class="svc-card">
+      <div class="svc-num">18</div>
+      <h3>Ecommerce Management</h3>
+      <p>Full ecommerce operational support across platforms. From product listings to customer service, I keep your online store running efficiently and professionally.</p>
+      <ul class="svc-list">
+        <li>Product uploads, descriptions, and optimisation</li>
+        <li>Order processing and fulfilment coordination</li>
+        <li>Inventory monitoring and stock management</li>
+        <li>Customer enquiry handling and dispute resolution</li>
+        <li>Platform management: Shopify, Etsy, WooCommerce</li>
+      </ul>
+    </div>
+    <div class="svc-card">
+      <div class="svc-num">19</div>
+      <h3>Strategic &amp; Ad-Hoc Support</h3>
+      <p>The work that does not fit neatly into a category but matters enormously. I anticipate your needs, step in before problems arise, and handle whatever the day throws at you.</p>
+      <ul class="svc-list">
+        <li>Assist with business strategy planning and workflow optimisation</li>
+        <li>Anticipate client needs and proactively solve problems</li>
+        <li>Handle urgent or time-sensitive tasks as they arise</li>
+        <li>Ad-hoc research, writing, or coordination projects</li>
+        <li>Anything that keeps you from operating at your best</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cta-band">
+    <div class="ctab-h">Not sure where to start?</div>
+    <p class="ctab-p">Book a free 30-minute consultation and I'll tell you exactly what would make the biggest difference for you right now.</p>
+    <a class="btn-outline-white" href="/contact/">Book a Free Consultation</a>
+  </div>
+  
+
+<footer class="site-footer">
+    <div class="ft-inner">
+      <div class="ft-top">
+        <div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Virtual Assistant &amp; Remote Executive Support Specialist. Helping leaders and founders operate at their absolute best.</p></div>
+        <div><p class="ft-col-title">Pages</p><ul class="ft-links"><li><a href="/">Home</a></li><li><a href="/services/">Services</a></li><li><a href="/portfolio/">Portfolio</a></li><li><a href="/about/">About</a></li><li><a href="/blog/">Blog</a></li></ul></div>
+        <div><p class="ft-col-title">Connect</p><ul class="ft-links"><li><a href="/contact/">Work With Me</a></li><li><a href="https://www.linkedin.com/in/wendymwende" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">LinkedIn</a></li></ul><div class="ft-social"><a href="https://www.linkedin.com/in/wendymwende" target="_blank" rel="noopener" aria-label="LinkedIn" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://x.com/InsyncEA" target="_blank" rel="noopener" aria-label="X / Twitter" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.261 5.636 5.903-5.636zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="https://www.facebook.com/ExecutivesAssistant/" target="_blank" rel="noopener" aria-label="Facebook" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a><a href="https://www.pinterest.com/InSyncEA/" target="_blank" rel="noopener" aria-label="Pinterest" class="ft-soc-link"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg></a></div></div>
+        <div><p class="ft-col-title">Legal</p><ul class="ft-links"><li><a href="/privacy/">Privacy Policy</a></li></ul></div>
+      </div>
+      <div class="ft-bottom"><span>&copy; 2026 InSyncEA. All rights reserved.</span><span>Executive Virtual Assistant &middot; Remote Executive Support &middot; USA &amp; UK</span></div>
+    </div>
+  </footer>
+</section>
+
+<script src="/assets/script.js"></script>
+</body>
+</html>
