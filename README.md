@@ -40,4 +40,4 @@ Write your blog post content here.
 
 ## Contact
 
-hello@insync-ea.com
+wendy@insyncea.com
