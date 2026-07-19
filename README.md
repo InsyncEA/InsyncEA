@@ -1,4 +1,4 @@
-# InSyncEA Website
+# InSyncEA
 
 Professional Executive Assistant website for InSyncEA, built with HTML and hosted on Cloudflare Pages.
 
