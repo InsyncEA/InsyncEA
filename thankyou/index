@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCRL7M4QKQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XCRL7M4QKQ');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You | InSyncEA</title>
+<meta name="description" content="Thank you for reaching out to InSyncEA. Your message has been received and I'll be in touch within 24 hours.">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#1B3A2D">
+<link rel="canonical" href="https://insyncea.com/thankyou/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="icon" type="image/png" href="/favicon.png">
+<style>
+@keyframes gentlePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+@keyframes checkDraw {
+  0% { stroke-dashoffset: 24; }
+  100% { stroke-dashoffset: 0; }
+}
+.ty-icon {
+  animation: gentlePulse 2.2s ease-in-out infinite;
+}
+.ty-icon svg path, .ty-icon svg polyline {
+  stroke-dasharray: 24;
+  stroke-dashoffset: 24;
+  animation: checkDraw 0.6s ease-out 0.3s forwards;
+}
+</style>
+</head>
+<body>
+<!-- NAV -->
+<nav>
+  <div class="nav-inner" style="display:flex;align-items:center;justify-content:space-between;gap:0">
+    <a class="logo" href="/" style="text-decoration:none">InSync<em>EA</em></a>
+    <ul class="nav-links">
+      <li><a href="/" id="n-home">Home</a></li>
+      <li><a href="/services/" id="n-services">Services</a></li>
+      <li><a href="/portfolio/" id="n-portfolio">Portfolio</a></li>
+      <li><a href="/about/" id="n-about">About</a></li>
+      <li><a href="/blog/" id="n-blog">Blog</a></li>
+      <li><a href="/contact/" id="n-contact">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="/contact/" style="display:inline-block;text-decoration:none;text-align:center">Work With Me</a>
+    <button class="hamburger" id="hamburger" onclick="openMobileMenu()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU BACKDROP -->
+<div class="mobile-menu-backdrop" id="mobileBackdrop" onclick="closeMobileMenu()"></div>
+
+<!-- MOBILE DRAWER -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Site navigation">
+  <div class="mobile-menu-header">
+    <span class="mobile-menu-logo">InSync<em>EA</em></span>
+    <button class="mobile-menu-close" onclick="closeMobileMenu()" aria-label="Close menu">&#10005;</button>
+  </div>
+  <nav class="mobile-menu-nav">
+    <a href="/">Home</a>
+    <a href="/services/">Services</a>
+    <a href="/portfolio/">Portfolio</a>
+    <a href="/about/">About</a>
+    <a href="/blog/">Blog</a>
+    <a href="/contact/">Contact</a>
+  </nav>
+  <div class="mobile-menu-footer">
+    <a class="btn-outline-white" href="/contact/" style="display:inline-block;text-decoration:none;text-align:center">Work With Me</a>
+    <p class="mobile-menu-tagline">Executive Assistant &middot; USA &amp; UK</p>
+  </div>
+</div>
+
+<!-- ===== THANK YOU ===== -->
+<section id="thank-you">
+  <div style="max-width:640px;margin:0 auto;padding:120px 5% 100px;text-align:center">
+    <div class="ty-icon" style="width:64px;height:64px;border-radius:50%;background:var(--green-light);display:flex;align-items:center;justify-content:center;margin:0 auto 32px">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--green)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+    <h1 style="font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,42px);font-weight:300;color:var(--ink);margin-bottom:16px">Thank you for reaching out</h1>
+    <p style="font-size:15px;color:var(--mid);line-height:1.9;font-weight:300;margin-bottom:40px">Your message has been received. I read every enquiry personally and will be in touch within 24 hours to talk through how I can help.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+      <a href="https://calendly.com/YOUR-ACTUAL-USERNAME/consultation" target="_blank" rel="noopener noreferrer" class="btn-green" style="display:inline-block;text-decoration:none;padding:16px 40px">Prefer to talk sooner? Book a call</a>
+      <a href="/" class="btn-outline-white" style="display:inline-block;text-decoration:none;padding:16px 40px;border:1px solid var(--border);color:var(--ink)">Back to Home</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+    <div class="ft-inner">
+      <div class="ft-top">
+        <div><div class="ft-brand" style="font-family:Cormorant Garamond,serif;font-size:24px;color:white;font-weight:400">InSync<em style="font-style:italic;color:#52B788">EA</em></div><p class="ft-tagline">Executive Virtual Assistant &amp; Remote Executive Support Specialist. Helping leaders and founders operate at their absolute best.</p></div>
+        <div><p class="ft-col-title">Pages</p><ul class="ft-links"><li><a href="/">Home</a></li><li><a href="/services/">Services</a></li><li><a href="/portfolio/">Portfolio</a></li><li><a href="/about/">About</a></li><li><a href="/blog/">Blog</a></li></ul></div>
+        <div><p class="ft-col-title">Connect</p><ul class="ft-links"><li><a href="/contact/">Work With Me</a></li><li><a href="https://www.linkedin.com/in/wendymwende" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">LinkedIn</a></li></ul></div>
+        <div><p class="ft-col-title">Legal</p><ul class="ft-links"><li><a href="/privacy/">Privacy Policy</a></li></ul></div>
+      </div>
+      <div class="ft-bottom"><span>&copy; 2026 InSyncEA. All rights reserved.</span><span>Executive Virtual Assistant &middot; Remote Executive Support &middot; USA &amp; UK</span></div>
+    </div>
+  </footer>
+
+<script src="/assets/script.js"></script>
+</body>
+</html>
