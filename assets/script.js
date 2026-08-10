@@ -30,3 +30,35 @@ document.addEventListener('keydown', function(e){
   window.vizGo = vizGo;
   setInterval(function(){ vizGo(current + 1); }, 5000);
 })();
+
+// Scroll-reveal animation (progressive enhancement — tags existing elements at runtime)
+(function(){
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (!('IntersectionObserver' in window)) return;
+
+  var selectors = [
+    '.hp-card', '.svc-card', '.tg-card', '.bg-card', '.bside-card',
+    '.av-item', '.pst-item', '.ws-item', '.hs-card', '.port-case',
+    '.viz-carousel', '.faq-item', '.img-card', '.gm-main', '.gm-cell',
+    '.pc-doc', '.vs-card', '.video-feat', '.ab-card', '.ha-right',
+    '.hq-inner', '.sec-h', '.hs-header'
+  ];
+  var nodes = document.querySelectorAll(selectors.join(','));
+  if (!nodes.length) return;
+
+  nodes.forEach(function(el, i){
+    el.classList.add('reveal-init');
+    el.style.transitionDelay = (Math.min(i % 6, 5) * 70) + 'ms';
+  });
+
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (entry.isIntersecting){
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  nodes.forEach(function(el){ io.observe(el); });
+})();
