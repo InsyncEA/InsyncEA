@@ -1,0 +1,18 @@
+# InSyncEA
+
+> InSyncEA is a premium Executive Virtual Assistant service run by Wendy Mwende, providing remote executive support to CEOs, founders, and business owners in the USA and UK. Services include calendar and email management, travel coordination, project management, and financial/administrative support.
+
+InSyncEA takes on a limited number of clients to ensure every engagement gets full attention. The founder has approximately 5 years of experience in executive assistant work.
+
+## Pages
+
+- [Home](https://insyncea.com/): Overview of Executive Virtual Assistant services for CEOs, founders, and business owners.
+- [Services](https://insyncea.com/services/): Full breakdown of services offered, including calendar management, email management, travel coordination, project management, and financial support.
+- [Portfolio](https://insyncea.com/portfolio/): Case studies showing real results from working with founders and business owners.
+- [About](https://insyncea.com/about/): Background on Wendy Mwende and the InSyncEA approach.
+- [Blog](https://insyncea.com/blog/): Articles on executive assistant best practices, delegation, and productivity.
+- [Contact](https://insyncea.com/contact/): Book a free consultation.
+
+## Optional
+
+- [Privacy Policy](https://insyncea.com/privacy/): Site privacy policy.
