@@ -2,7 +2,7 @@ backend:
   name: github
   repo: InsyncEA/InsyncEA
   branch: main
-  base_url: https://insyncea-website.pages.dev
+  base_url: https://insyncea.com
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
