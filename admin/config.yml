@@ -1,1 +1,4 @@
-
+backend:
+  name: github
+  repo: InsyncEA/InsyncEA
+  branch: main
