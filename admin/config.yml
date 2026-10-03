@@ -3,6 +3,7 @@ backend:
   repo: InsyncEA/InsyncEA
   branch: main
   base_url: https://insyncea.com
+  auth_endpoint: auth
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
