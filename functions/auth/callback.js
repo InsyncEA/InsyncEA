@@ -28,16 +28,24 @@ export async function onRequest(context) {
     `
     <!doctype html>
     <html>
+      <head>
+        <title>Authorizing...</title>
+      </head>
       <body>
         <script>
-          window.opener.postMessage(
-            {
+          (function() {
+            const message = {
               token: "${data.access_token}",
               provider: "github"
-            },
-            "*"
-          );
-          window.close();
+            };
+
+            window.opener.postMessage(
+              "authorization:" + JSON.stringify(message),
+              window.location.origin
+            );
+
+            window.close();
+          })();
         </script>
       </body>
     </html>
