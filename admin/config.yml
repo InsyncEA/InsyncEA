@@ -2,3 +2,18 @@ backend:
   name: github
   repo: InsyncEA/InsyncEA
   branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "image", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
