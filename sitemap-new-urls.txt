@@ -1,0 +1,24 @@
+Add these lines inside <urlset> in your existing sitemap.xml, next to your blog URLs.
+Do not add /thankyou/ or /404.html.
+
+<url><loc>https://insyncea.com/services/</loc></url>
+<url><loc>https://insyncea.com/services/executive-support/</loc></url>
+<url><loc>https://insyncea.com/services/business-operations-support/</loc></url>
+<url><loc>https://insyncea.com/services/customer-partnership-operations/</loc></url>
+<url><loc>https://insyncea.com/services/administrative-support/</loc></url>
+<url><loc>https://insyncea.com/about/</loc></url>
+<url><loc>https://insyncea.com/faq/</loc></url>
+<url><loc>https://insyncea.com/contact/</loc></url>
+<url><loc>https://insyncea.com/case-studies/</loc></url>
+<url><loc>https://insyncea.com/case-studies/calendly-onboarding-call-scheduling-workflow/</loc></url>
+<url><loc>https://insyncea.com/case-studies/crm-lead-management-workflow-demo/</loc></url>
+<url><loc>https://insyncea.com/case-studies/customer-growth-subscription-adoption-ai-product-kenya/</loc></url>
+<url><loc>https://insyncea.com/case-studies/customer-partnership-operations-support/</loc></url>
+<url><loc>https://insyncea.com/case-studies/executive-calendar-management-nonprofit-founder/</loc></url>
+<url><loc>https://insyncea.com/case-studies/executive-research-information-gathering/</loc></url>
+<url><loc>https://insyncea.com/case-studies/lead-generation-outreach-support/</loc></url>
+<url><loc>https://insyncea.com/case-studies/monday-com-workflow-setup-automations/</loc></url>
+<url><loc>https://insyncea.com/case-studies/shopify-operations-management/</loc></url>
+<url><loc>https://insyncea.com/case-studies/sop-development-process-documentation-nonprofit/</loc></url>
+<url><loc>https://insyncea.com/case-studies/wholesale-order-tracking-system-operations-improvement/</loc></url>
+<url><loc>https://insyncea.com/case-studies/wordpress-website-management/</loc></url>
