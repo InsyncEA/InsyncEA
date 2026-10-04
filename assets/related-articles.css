@@ -1,0 +1,20 @@
+.ra{background:#F3F6F2;padding:72px 0}
+.ra-in{max-width:1080px;margin:0 auto;padding:0 24px}
+.ra-h{font-family:"Source Serif 4",Georgia,serif;font-weight:600;color:#1B3A2D;font-size:clamp(1.6rem,3.2vw,2.2rem);margin:0 0 28px}
+.ra-grid{display:grid;gap:24px;grid-template-columns:repeat(3,1fr)}
+.ra-n4{grid-template-columns:repeat(4,1fr)}
+.ra-card{position:relative;background:#fff;border:1px solid #d3dfd7;border-radius:8px;overflow:hidden;display:flex;flex-direction:column}
+.ra-card:hover{border-color:#C9A24B}
+.ra-card img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:#1B3A2D}
+.ra-b{padding:18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.ra-c{margin:0;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:#4F5E57;font-weight:700}
+.ra-card h3{margin:0;font-family:"Source Serif 4",Georgia,serif;font-size:1.15rem;line-height:1.3}
+.ra-card h3 a{color:#1B3A2D;text-decoration:none}
+.ra-card h3 a:after{content:"";position:absolute;inset:0}
+.ra-card h3 a:focus-visible{outline:3px solid #C9A24B;outline-offset:-3px}
+.ra-e{margin:0;color:#4F5E57;font-size:.95rem;line-height:1.55}
+.ra-more{margin-top:auto;font-weight:700;color:#1B4332;font-size:.95rem}
+.ra-card:hover .ra-more{text-decoration:underline}
+@media(max-width:1000px){.ra-grid,.ra-n4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.ra{padding:52px 0}
+.ra-grid,.ra-n4{grid-template-columns:1fr}}
