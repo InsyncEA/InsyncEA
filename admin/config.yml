@@ -1,0 +1,37 @@
+backend:
+  name: github
+  repo: InsyncEA/InsyncEA
+  branch: main
+  base_url: https://insyncea.com
+  auth_endpoint: auth
+
+site_url: https://insyncea.com
+media_folder: "assets/blog"
+public_folder: "/assets/blog"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    folder: "content/blog"
+    extension: "md"
+    create: true
+    slug: "{{slug}}"
+    summary: "{{title}}"
+    fields:
+      - {label: "Title (shown as the page heading)", name: "title", widget: "string", hint: "Put the main keyword near the start. Keep it under 70 characters."}
+      - {label: "URL Slug", name: "url_slug", widget: "string", pattern: ['^[a-z0-9]+(-[a-z0-9]+)*$', "Use only lowercase letters, numbers and hyphens, like executive-calendar-management"], hint: "This becomes insyncea.com/blog/your-slug/. Short, lowercase, with the focus keyword. Do not change it after publishing."}
+      - {label: "Publish Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD"}
+      - {label: "Draft (tick to keep it off the website)", name: "draft", widget: "boolean", default: false, required: false}
+      - {label: "SEO Meta Title", name: "meta_title", widget: "string", pattern: ['^.{30,60}$', "Must be 30 to 60 characters"], hint: "30 to 60 characters. Focus keyword first. This is the blue link people see in Google."}
+      - {label: "SEO Meta Description", name: "meta_description", widget: "text", pattern: ['^.{120,160}$', "Must be 120 to 160 characters, on one line"], hint: "120 to 160 characters. Say what the reader will learn and include the focus keyword once. This is the grey text under the link in Google."}
+      - {label: "SEO Focus Keyword", name: "focus_keyword", widget: "string", hint: "The one phrase this article should rank for. Use it in the title, the first paragraph and one heading."}
+      - {label: "SEO Secondary Keywords", name: "keywords", widget: "list", required: false, hint: "Two to four related phrases."}
+      - {label: "Category", name: "category", widget: "select", options: ["Executive Support", "Business Operations", "Customer Operations", "Administrative Support", "Hiring and Delegation"]}
+      - {label: "Tags", name: "tags", widget: "list", hint: "Three to five short lowercase words. Reuse the same tags across articles, because Related Articles matches on them."}
+      - {label: "Audience", name: "audience", widget: "select", multiple: true, options: ["founders", "executives", "small business", "startups"]}
+      - {label: "Related Service Pages", name: "services", widget: "select", multiple: true, options: [{label: "Executive Support", value: "executive-support"}, {label: "Business Operations Support", value: "business-operations-support"}, {label: "Customer and Partnership Operations", value: "customer-partnership-operations"}, {label: "Administrative Support", value: "administrative-support"}], hint: "Adds a 'How InSyncEA can help' box with links to these pages."}
+      - {label: "Short Description for Cards", name: "excerpt", widget: "text", pattern: ['^.{40,160}$', "Must be 40 to 160 characters"], hint: "One or two sentences. Shown on the Related Articles cards and under the article heading."}
+      - {label: "Featured Image", name: "image", widget: "image", hint: "Use a 1200 x 630 pixel image under 200 KB."}
+      - {label: "Featured Image Description (alt text)", name: "image_alt", widget: "string", hint: "Describe what is in the picture in one short sentence."}
+      - {label: "Article Text", name: "body", widget: "markdown", hint: "Use Heading 2 and Heading 3 for sections. Do not use Heading 1."}
