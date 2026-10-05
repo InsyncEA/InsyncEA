@@ -4,7 +4,8 @@ and keeps assets/posts.json and sitemap.xml up to date.
 Run from the website's main folder:  python3 tools/build_posts.py
 Needs:  pip install markdown pyyaml"""
 import json, math, re, html
-from datetime import datetime
+from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
 from pathlib import Path
 import markdown, yaml
 
@@ -15,6 +16,8 @@ SVC = {'executive-support': 'executive support services',
        'customer-partnership-operations': 'customer and partnership operations',
        'administrative-support': 'remote administrative support'}
 e = lambda s: html.escape(str(s), quote=True)
+# An article goes live at 8:00 am New York time on its date (the clock changes between EST and EDT by itself)
+TODAY = (datetime.now(ZoneInfo('America/New_York')) - timedelta(hours=8)).strftime('%Y-%m-%d')
 
 def front(text):
     m = re.match(r'^---\s*\n(.*?)\n---\s*\n?(.*)$', text, re.S)
@@ -69,6 +72,7 @@ def main():
         slug = str(meta.get('url_slug') or f.stem).strip().strip('/')
         title, mt, md = meta['title'], meta['meta_title'], meta['meta_description']
         d = str(meta['date'])[:10]; dt = datetime.strptime(d, '%Y-%m-%d')
+        if d > TODAY: print('scheduled for', d, '-', f.name); continue
         img = '/' + str(meta['image']).lstrip('/')
         alt = meta.get('image_alt') or title
         cat = meta.get('category') or 'Blog'
@@ -116,7 +120,7 @@ def main():
     if sm.exists():
         s = sm.read_text(encoding='utf-8'); add = ''
         for u, d in urls:
-            if SITE + u not in s: add += f'  <url><loc>{SITE}{u}</loc><lastmod>{d}</lastmod></url>\n'
+            if f'<loc>{SITE}{u}</loc>' not in s: add += f'  <url><loc>{SITE}{u}</loc><lastmod>{d}</lastmod></url>\n'
         if add and '</urlset>' in s: sm.write_text(s.replace('</urlset>', add + '</urlset>'), encoding='utf-8'); print('added to sitemap.xml')
     print('done,', len(made), 'article(s) built')
 
