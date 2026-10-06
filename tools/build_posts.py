@@ -58,6 +58,29 @@ def blog_index(tpl, posts):
     out = ROOT / 'blog' / 'index.html'; out.parent.mkdir(parents=True, exist_ok=True)
     if not out.exists() or out.read_text(encoding='utf-8') != h: out.write_text(h, encoding='utf-8'); print('built /blog/ (' + str(len(posts)) + ' article(s))')
 
+def add_toc(body_html):
+    """Gives each H2 and H3 an id, and returns the contents list (empty if there are fewer than 3 H2 headings)."""
+    used, items = set(), []
+    def slug(text):
+        base = re.sub(r'[^a-z0-9]+', '-', re.sub(r'<[^>]+>', '', html.unescape(text)).lower()).strip('-') or 'section'
+        s_, n = base, 2
+        while s_ in used: s_ = f'{base}-{n}'; n += 1
+        used.add(s_); return s_
+    def sub(m):
+        lvl, text = m.group(1), m.group(2)
+        sid = slug(text); items.append((lvl, sid, re.sub(r'<[^>]+>', '', text).strip()))
+        return f'<h{lvl} id="{sid}">{text}</h{lvl}>'
+    out = re.sub(r'<h([23])>(.*?)</h\1>', sub, body_html, flags=re.S)
+    groups = []
+    for lvl, sid, text in items:
+        if lvl == '2' or not groups: groups.append([(sid, text), []])
+        else: groups[-1][1].append((sid, text))
+    if sum(1 for i in items if i[0] == '2') < 3: return out, ''
+    link = lambda sid, text: f'<a href="#{sid}">{e(text)}</a>'
+    lis = ''.join('<li>' + link(*head) + ('<ol>' + ''.join('<li>' + link(*s2) + '</li>' for s2 in subs) + '</ol>' if subs else '') + '</li>' for head, subs in groups)
+    return out, '<aside class="toc-side"><details class="toc-d" open><summary>On this page</summary><ol>' + lis + '</ol></details></aside>'
+
+
 def main():
     tpl = (ROOT / 'tools/blog-post-template.html').read_text(encoding='utf-8')
     pj = ROOT / 'assets/posts.json'
@@ -80,6 +103,7 @@ def main():
         tags, aud, svcs = as_list(meta.get('tags')), as_list(meta.get('audience')), as_list(meta.get('services'))
         kws = [k for k in [meta.get('focus_keyword')] + as_list(meta.get('keywords')) if k]
         html_body = markdown.markdown(body, extensions=['extra', 'sane_lists']).replace('<h1', '<h2').replace('</h1>', '</h2>')
+        html_body, toc = add_toc(html_body)
         words = len(re.findall(r'\w+', re.sub(r'<[^>]+>', ' ', html_body)))
         mins = max(1, math.ceil(words / 200))
         links = [f'<a href="/services/{s}/">{SVC[s]}</a>' for s in svcs if s in SVC]
@@ -106,6 +130,8 @@ def main():
         h = h.replace('/assets/blog/[IMAGE-FILE]', img)
         h = h.replace('<link rel="canonical"', '<meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical"', 1)
         h = re.sub(r'<!--body:start-->.*?<!--body:end-->', lambda m: '<!--body:start-->' + html_body + box + '<!--body:end-->', h, flags=re.S)
+        h = re.sub(r'<!--toc:start-->.*?<!--toc:end-->', lambda m: '<!--toc:start-->' + toc + '<!--toc:end-->', h, flags=re.S)
+        if toc: h = h.replace('<div class="post-layout">', '<div class="post-layout has-toc">', 1)
         out = ROOT / 'blog' / slug / 'index.html'; out.parent.mkdir(parents=True, exist_ok=True)
         if not out.exists() or out.read_text(encoding='utf-8') != h: out.write_text(h, encoding='utf-8'); print('built', url)
         urls.append((url, d))
