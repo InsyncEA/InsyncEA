@@ -7,6 +7,12 @@ on:
       - 'assets/posts.json'
       - 'blog/**'
       - 'tools/**'
+      - 'assets/**'
+      - '*.html'
+      - '**/*.html'
+  schedule:
+    - cron: '0 12 * * *'
+    - cron: '0 13 * * *'
   workflow_dispatch:
 permissions:
   contents: write
@@ -24,6 +30,8 @@ jobs:
         run: python3 tools/build_posts.py
       - name: Write related articles into the HTML
         run: python3 tools/build_related.py
+      - name: Speed up the pages
+        run: python3 tools/optimize_pages.py
       - name: Save changes
         run: |
           if [ -n "$(git status --porcelain)" ]; then
@@ -31,5 +39,6 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add -A
             git commit -m "Update blog pages and related articles"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
             git push
           fi
