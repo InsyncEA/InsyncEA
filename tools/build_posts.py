@@ -16,8 +16,9 @@ SVC = {'executive-support': 'executive support services',
        'customer-partnership-operations': 'customer and partnership operations',
        'administrative-support': 'remote administrative support'}
 e = lambda s: html.escape(str(s), quote=True)
-# An article goes live at 8:00 am New York time on its date (the clock changes between EST and EDT by itself)
-TODAY = (datetime.now(ZoneInfo('America/New_York')) - timedelta(hours=8)).strftime('%Y-%m-%d')
+# An article goes live as soon as it is published: any article dated today (Nairobi time) or earlier is built straight away.
+# A later date schedules it, and it goes live at midnight Nairobi time on that date.
+TODAY = datetime.now(ZoneInfo('Africa/Nairobi')).strftime('%Y-%m-%d')
 
 def front(text):
     m = re.match(r'^---\s*\n(.*?)\n---\s*\n?(.*)$', text, re.S)
