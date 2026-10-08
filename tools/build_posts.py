@@ -25,24 +25,66 @@ def front(text):
 
 def as_list(v): return [str(x) for x in v] if isinstance(v, list) else ([str(v)] if v else [])
 
+TOPICS = [
+    ('Business Operations', 'Systems, planning and day-to-day operations for growing teams.'),
+    ('Workflows and Systems', 'How to map, build and improve the workflows your business runs on.'),
+    ('SOPs and Process Documentation', 'Turn know-how into clear, repeatable procedures.'),
+    ('Executive Support', 'Calendar, inbox and decision support for busy leaders.'),
+    ('Productivity', 'Habits and tools that protect your focus and your time.'),
+    ('E-commerce Operations', 'Orders, inventory and store management that run smoothly.'),
+]
+
+def topic_slug(name): return re.sub(r'[^a-z0-9]+', '-', str(name).lower()).strip('-')
+
 def blog_index(tpl, posts):
-    """Writes blog/index.html: the page that lists every article, newest first."""
-    title = 'Executive Assistant and Operations Blog | InSyncEA'
-    desc = 'Practical articles on executive support, calendar and inbox management, SOPs and business operations for founders and growing teams.'
+    """Writes blog/index.html: the blog resource hub (topics, featured guides, latest articles)."""
+    title = 'Business Operations & Executive Support Resources | InSyncEA'
+    desc = 'Practical guides on business operations, workflows, SOPs, productivity and executive support to help founders and small teams build better systems.'
     posts = sorted(posts, key=lambda p: p.get('date') or '', reverse=True)
+
+    def card(p):
+        cat = p.get('category') or ''
+        q = e((str(p['title']) + ' ' + str(p.get('excerpt') or '') + ' ' + cat).lower())
+        return (f'<article class="ra-card" data-cat="{e(topic_slug(cat))}" data-q="{q}"><img src="{e(p.get("image") or "/assets/og-image.png")}" alt="{e(p.get("imageAlt") or p["title"])}" width="640" height="360" loading="lazy" decoding="async">'
+                f'<div class="ra-b">' + (f'<p class="ra-c">{e(cat)}</p>' if cat else '') +
+                f'<h3><a href="{e(p["url"])}">{e(p["title"])}</a></h3><p class="ra-e">{e((p.get("excerpt") or "")[:150])}</p><span class="ra-more" aria-hidden="true">Read article</span></div></article>')
+
+    counts = {}
+    for p in posts: counts[topic_slug(p.get('category') or '')] = counts.get(topic_slug(p.get('category') or ''), 0) + 1
+    chips = '<button type="button" class="bh-topic" data-topic="all" aria-pressed="true"><span class="bh-tn">All topics</span><span class="bh-td">Every article, newest first.</span></button>'
+    for name, blurb in TOPICS:
+        n = counts.get(topic_slug(name), 0)
+        chips += (f'<button type="button" class="bh-topic" data-topic="{topic_slug(name)}" aria-pressed="false"><span class="bh-tn">{e(name)}</span>'
+                  f'<span class="bh-td">{e(blurb)}</span><span class="bh-tc">{n} article{"" if n == 1 else "s"}</span></button>')
+
+    hero = ('<section class="hero"><div class="wrap"><h1>Business Operations &amp; Executive Support Resources</h1>'
+            '<p class="intro">Practical insights, guides, and strategies to help growing businesses improve operations, streamline workflows, document processes, and stay organized.</p>'
+            '<p>Whether you want better systems, more productivity, or simpler day-to-day operations, you will find actionable resources made for founders and small teams.</p>'
+            '<form class="bh-search" role="search" onsubmit="return false"><label for="bh-q">Search the blog</label><input id="bh-q" type="search" placeholder="Search articles, for example workflows" autocomplete="off"></form></div></section>')
+    topics = (f'<section class="sec alt" aria-labelledby="bh-topics-t"><div class="wrap"><h2 id="bh-topics-t">Browse by topic</h2>'
+              f'<p>Pick a topic to see only those articles.</p><div class="bh-topics">{chips}</div></div></section>')
+    featured = ''
+    if len(posts) >= 4:
+        featured = ('<section class="ra bh-feat" aria-labelledby="bh-feat-t"><div class="ra-in"><h2 class="ra-h" id="bh-feat-t">Featured guides</h2><div class="ra-grid">'
+                    + ''.join(card(p).replace(' data-cat=', ' data-feat="1" data-cat=') for p in posts[:3]) + '</div></div></section>')
+    learn = ('<section class="sec" aria-labelledby="bh-learn-t"><div class="wrap"><h2 id="bh-learn-t">What you will learn</h2><ul class="bh-learn">'
+             '<li>Build systems that help your business scale.</li><li>Improve workflows and reduce repetitive work.</li>'
+             '<li>Create clear processes and documentation.</li><li>Organize daily operations more effectively.</li>'
+             '<li>Delegate with confidence and improve team productivity.</li></ul></div></section>')
     if posts:
-        cards = ''.join(
-            f'<article class="ra-card"><img src="{e(p.get("image") or "/assets/og-image.png")}" alt="{e(p.get("imageAlt") or p["title"])}" width="640" height="360" loading="lazy" decoding="async">'
-            f'<div class="ra-b">' + (f'<p class="ra-c">{e(p["category"])}</p>' if p.get('category') else '') +
-            f'<h3><a href="{e(p["url"])}">{e(p["title"])}</a></h3><p class="ra-e">{e((p.get("excerpt") or "")[:150])}</p><span class="ra-more" aria-hidden="true">Read article</span></div></article>'
-            for p in posts)
-        listing = f'<section class="ra" aria-labelledby="bl-t"><div class="ra-in"><h2 class="ra-h" id="bl-t">Latest articles</h2><div class="ra-grid">{cards}</div></div></section>'
+        listing = (f'<section class="ra" id="bh-latest" aria-labelledby="bl-t"><div class="ra-in"><h2 class="ra-h" id="bl-t">Latest articles</h2>'
+                   f'<div class="ra-grid" id="bh-list">{"".join(card(p) for p in posts)}</div>'
+                   '<p id="bh-none" class="bh-none" hidden>No articles match yet. New ones are on the way, so try another topic or search.</p></div></section>')
     else:
         listing = '<section class="sec"><div class="wrap"><h2>New articles are on the way</h2><p>In the meantime, explore the <a href="/services/">services</a> or read the <a href="/case-studies/">case studies</a>.</p></div></section>'
-    cta = re.search(r'<section class="sec final">.*?</section>', tpl, re.S)
-    hero = ('<section class="hero"><div class="wrap"><h1>Executive support and business operations: practical advice</h1>'
-            '<p class="intro">Practical advice on managing your time, your team, and your operations, from a remote executive assistant.</p></div></section>')
-    main = '<main id="main">' + hero + listing + (cta.group(0) if cta else '') + '</main>'
+    cta = ('<section class="sec final"><div class="wrap"><h2>Looking for hands-on support?</h2>'
+           '<p>Explore our executive and operations support services, or book a consultation and tell me what is taking up your time.</p>'
+           '<div class="cta" style="justify-content:center"><a class="btn" href="/services/">Explore our services</a><a class="btn ghost" href="/contact/#book">Book a Consultation</a></div></div></section>')
+    js = ('<script>(function(){var b=document.querySelectorAll(".bh-topic"),c=document.querySelectorAll("#bh-list .ra-card"),s=document.getElementById("bh-q"),n=document.getElementById("bh-none"),t="all";'
+          'if(!s||!n)return;function f(){var q=s.value.trim().toLowerCase(),k=0;c.forEach(function(x){var ok=(t==="all"||x.getAttribute("data-cat")===t)&&(!q||x.getAttribute("data-q").indexOf(q)>-1);x.hidden=!ok;if(ok)k++});n.hidden=k>0}'
+          'b.forEach(function(x){x.addEventListener("click",function(){t=x.getAttribute("data-topic");b.forEach(function(y){y.setAttribute("aria-pressed",y===x?"true":"false")});f();var l=document.getElementById("bh-latest");if(l)l.scrollIntoView({behavior:"smooth"})})});'
+          's.addEventListener("input",f)})();</script>')
+    main = '<main id="main">' + hero + topics + featured + learn + listing + cta + js + '</main>'
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "CollectionPage", "name": title, "description": desc, "url": SITE + "/blog/"},
         {"@type": "BreadcrumbList", "itemListElement": [
@@ -53,10 +95,12 @@ def blog_index(tpl, posts):
     h = h.replace('content="article"', 'content="website"').replace(SITE + '/assets/blog/[IMAGE-FILE]', SITE + '/assets/og-image.png')
     h = re.sub(r'<main id="main">.*</main>', lambda m: main, h, flags=re.S)
     h = h.replace('<script src="/assets/related-articles.js" defer></script>', '')
+    h = h.replace('<link rel="stylesheet" href="/assets/related-articles.css">', '<link rel="stylesheet" href="/assets/related-articles.css"><link rel="stylesheet" href="/assets/blog-hub.css">')
     robots = '<meta name="robots" content="index,follow,max-image-preview:large">' if posts else '<meta name="robots" content="noindex">'
     h = h.replace('<link rel="canonical"', robots + '<link rel="canonical"', 1)
     out = ROOT / 'blog' / 'index.html'; out.parent.mkdir(parents=True, exist_ok=True)
     if not out.exists() or out.read_text(encoding='utf-8') != h: out.write_text(h, encoding='utf-8'); print('built /blog/ (' + str(len(posts)) + ' article(s))')
+
 
 def add_toc(body_html):
     """Gives each H2 and H3 an id, and returns the contents list (empty if there are fewer than 3 H2 headings)."""
