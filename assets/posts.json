@@ -1,3 +1,28 @@
 {
-  "posts": []
+  "posts": [
+    {
+      "url": "/blog/how-to-create-workflows/",
+      "title": "How to Create Workflows for a Small Business (2026 Guide)",
+      "excerpt": "A simple 7-step method to create workflows for your small business, with flowchart examples and a free template you can copy today.",
+      "image": "/assets/blog/how-to-create-workflows-small-business.webp",
+      "imageAlt": "Branded graphic with the title How to Create Workflows for a Small Business",
+      "category": "Business Operations",
+      "tags": [
+        "workflows",
+        "operations",
+        "processes",
+        "templates",
+        "sops"
+      ],
+      "audience": [
+        "small business"
+      ],
+      "services": [
+        "business-operations-support",
+        "administrative-support"
+      ],
+      "date": "2026-10-07",
+      "auto": true
+    }
+  ]
 }
