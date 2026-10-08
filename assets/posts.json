@@ -23,6 +23,30 @@
       ],
       "date": "2026-10-07",
       "auto": true
+    },
+    {
+      "url": "/blog/workflow-steps/",
+      "title": "Workflow Steps: 5 Steps to Creating an Effective Workflow",
+      "excerpt": "The five workflow steps that turn a messy task into a clear, repeatable process, with a flowchart, example, and checklist.",
+      "image": "/assets/blog/workflow-steps-5-steps-effective-workflow.webp",
+      "imageAlt": "Branded graphic with the title Workflow Steps: 5 Steps to Creating an Effective Workflow",
+      "category": "Workflows and Systems",
+      "tags": [
+        "workflows",
+        "operations",
+        "processes",
+        "sops",
+        "checklists"
+      ],
+      "audience": [
+        "small business"
+      ],
+      "services": [
+        "business-operations-support",
+        "administrative-support"
+      ],
+      "date": "2026-10-08",
+      "auto": true
     }
   ]
 }
