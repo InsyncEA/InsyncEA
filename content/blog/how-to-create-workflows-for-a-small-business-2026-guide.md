@@ -88,7 +88,7 @@ The goal is to remove the boring guesswork, not the good parts.
 
 
 
-## How to Create a Workflows in 7 Simple Steps
+## How to Create Workflows in 7 Simple Steps
 
 This is the core method. It works for any small business, any industry, and any tool. Go through the steps in order and you'll end up with a workflow someone else can actually follow.
 
