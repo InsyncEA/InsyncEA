@@ -25,6 +25,33 @@
       "auto": true
     },
     {
+      "url": "/blog/what-are-business-operations/",
+      "title": "What Are Business Operations? A Complete Guide for Growing Businesses",
+      "excerpt": "A plain-language guide to business operations: what they include, examples for different businesses, common problems, and how to improve them.",
+      "image": "/assets/blog/what-are-business-operations.webp",
+      "imageAlt": "Branded graphic with the title What Are Business Operations? A Complete Guide for Growing Businesses",
+      "category": "Business Operations",
+      "tags": [
+        "checklists",
+        "sops",
+        "processes",
+        "operations"
+      ],
+      "audience": [
+        "small business",
+        "founders",
+        "executives",
+        "startups"
+      ],
+      "services": [
+        "executive-support",
+        "business-operations-support",
+        "administrative-support"
+      ],
+      "date": "2026-10-14",
+      "auto": true
+    },
+    {
       "url": "/blog/workflow-steps/",
       "title": "Workflow Steps: 5 Steps to Creating an Effective Workflow",
       "excerpt": "The five workflow steps that turn a messy task into a clear, repeatable process, with a flowchart, example, and checklist.",
