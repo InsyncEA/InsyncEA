@@ -13,7 +13,7 @@ keywords:
   - workflow template
   - workflow examples
   - workflow diagram
-category: Business Operations
+category: Workflows and Systems
 tags:
   - workflows
   - operations
