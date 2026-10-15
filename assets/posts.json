@@ -25,6 +25,31 @@
       "auto": true
     },
     {
+      "url": "/blog/functions-of-business-operations/",
+      "title": "The 7 Core Functions of Business Operations ",
+      "excerpt": "The seven jobs every business does behind the scenes, how they work together, and how to find the one that needs attention first. ",
+      "image": "/assets/blog/7-core-functions-of-business-operations.webp",
+      "imageAlt": "Branded graphic with the title The 7 Core Functions of Business Operations",
+      "category": "Business Operations",
+      "tags": [
+        "operations",
+        "workflows",
+        "processes",
+        "checklists",
+        "delegation"
+      ],
+      "audience": [
+        "small business",
+        "founders"
+      ],
+      "services": [
+        "business-operations-support",
+        "administrative-support"
+      ],
+      "date": "2026-10-15",
+      "auto": true
+    },
+    {
       "url": "/blog/workflow-steps/",
       "title": "Workflow Steps: 5 Steps to Creating an Effective Workflow",
       "excerpt": "The five workflow steps that turn a messy task into a clear, repeatable process, with a flowchart, example, and checklist.",
