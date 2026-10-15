@@ -25,6 +25,31 @@
       "auto": true
     },
     {
+      "url": "/blog/how-to-improve-business-operations/",
+      "title": "How to Improve Business Operations in a Small Business",
+      "excerpt": "A practical seven-step method, ten quick wins, and a 30-day plan to improve the way your small business runs, without new software.",
+      "image": "/assets/blog/how-to-improve-business-operations-small-business.webp",
+      "imageAlt": "Branded graphic with the title How to Improve Business Operations in a Small Business",
+      "category": "Business Operations",
+      "tags": [
+        "operations",
+        "workflows",
+        "processes",
+        "checklists",
+        "productivity"
+      ],
+      "audience": [
+        "founders",
+        "small business"
+      ],
+      "services": [
+        "business-operations-support",
+        "administrative-support"
+      ],
+      "date": "2026-10-15",
+      "auto": true
+    },
+    {
       "url": "/blog/functions-of-business-operations/",
       "title": "The 7 Core Functions of Business Operations ",
       "excerpt": "The seven jobs every business does behind the scenes, how they work together, and how to find the one that needs attention first. ",
