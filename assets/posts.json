@@ -1,6 +1,31 @@
 {
   "posts": [
     {
+      "url": "/blog/business-operations-vs-operations-management/",
+      "title": "Business Operations vs Operations Management: What’s the Difference?",
+      "excerpt": "The simple difference between business operations and operations management, with examples, a comparison table, and where to start.",
+      "image": "/assets/blog/business-operations-vs-operations-management.webp",
+      "imageAlt": "Branded graphic with the title Business Operations vs Operations Management: What’s the Difference?",
+      "category": "Business Operations",
+      "tags": [
+        "operations",
+        "workflows",
+        "processes",
+        "management",
+        "productivity"
+      ],
+      "audience": [
+        "founders",
+        "small business"
+      ],
+      "services": [
+        "business-operations-support",
+        "administrative-support"
+      ],
+      "date": "2026-10-15",
+      "auto": true
+    },
+    {
       "url": "/blog/how-to-create-workflows/",
       "title": "How to Create Workflows for a Small Business (2026 Guide)",
       "excerpt": "A simple 7-step method to create workflows for your small business, with flowchart examples and a free template you can copy today.",
