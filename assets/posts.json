@@ -26,6 +26,31 @@
       "auto": true
     },
     {
+      "url": "/blog/business-operations-challenges/",
+      "title": "Common Business Operations Challenges and How to Solve Them ",
+      "excerpt": "Eight common operations problems, what causes them, and a practical fix for each, plus a simple way to find the real root cause.",
+      "image": "/assets/blog/business-operations-challenges-and-solutions.webp",
+      "imageAlt": "Branded graphic with the title Common Business Operations Challenges and How to Solve Them",
+      "category": "Business Operations",
+      "tags": [
+        "operations",
+        "processes",
+        "workflows",
+        "productivity",
+        "delegation"
+      ],
+      "audience": [
+        "founders",
+        "startups"
+      ],
+      "services": [
+        "business-operations-support",
+        "administrative-support"
+      ],
+      "date": "2026-10-16",
+      "auto": true
+    },
+    {
       "url": "/blog/how-to-create-workflows/",
       "title": "How to Create Workflows for a Small Business (2026 Guide)",
       "excerpt": "A simple 7-step method to create workflows for your small business, with flowchart examples and a free template you can copy today.",
