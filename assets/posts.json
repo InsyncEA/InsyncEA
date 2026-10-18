@@ -51,22 +51,22 @@
       "auto": true
     },
     {
-      "url": "/blog/business-systems-for-growth/",
-      "title": "How to Build Better Business Systems for Growth",
-      "excerpt": "What business systems are, which ones to build first, and a six-step method with a blueprint you can copy to help your business grow.",
-      "image": "/assets/blog/business-systems-for-growth.webp",
-      "imageAlt": "Branded graphic with the title Build Better Business Systems for Growth",
-      "category": "Workflows and Systems",
+      "url": "/blog/signs-business-operations-need-improvement/",
+      "title": "Signs Your Business Operations Need Improvement",
+      "excerpt": "Twelve warning signs of weak operations, a quick scorecard to check your business, and a clear first step for each one.",
+      "image": "/assets/blog/signs-business-operations-need-improvement.webp",
+      "imageAlt": "Branded graphic with the title Signs Your Business Operations Need Improvement",
+      "category": "Business Operations",
       "tags": [
         "operations",
-        "workflows",
         "processes",
-        "sops",
-        "checklists"
+        "workflows",
+        "checklists",
+        "productivity"
       ],
       "audience": [
         "small business",
-        "startups"
+        "founders"
       ],
       "services": [
         "business-operations-support",
