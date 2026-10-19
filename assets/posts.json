@@ -51,6 +51,31 @@
       "auto": true
     },
     {
+      "url": "/blog/ecommerce-operations/",
+      "title": "Ecommerce Operations: What They Are and How They Work ",
+      "excerpt": "What ecommerce operations do, the eight areas they cover, and how an order moves from checkout to delivery, with answers to common questions.",
+      "image": "/assets/blog/ecommerce-operations.webp",
+      "imageAlt": "Branded graphic with the title Ecommerce Operations: What They Are and How They Work",
+      "category": "E-commerce Operations",
+      "tags": [
+        "operations",
+        "ecommerce",
+        "workflows",
+        "processes",
+        "fulfillment"
+      ],
+      "audience": [
+        "small business",
+        "founders"
+      ],
+      "services": [
+        "business-operations-support",
+        "customer-partnership-operations"
+      ],
+      "date": "2026-10-19",
+      "auto": true
+    },
+    {
       "url": "/blog/signs-business-operations-need-improvement/",
       "title": "Signs Your Business Operations Need Improvement",
       "excerpt": "Twelve warning signs of weak operations, a quick scorecard to check your business, and a clear first step for each one.",
