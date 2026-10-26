@@ -51,6 +51,31 @@
       "auto": true
     },
     {
+      "url": "/blog/ecommerce-management/",
+      "title": "Ecommerce Management: What It Is and How to Do It Well ",
+      "excerpt": "What ecommerce management covers, how to run it with a simple weekly routine, and when to hire or outsource it.",
+      "image": "/assets/blog/ecommerce-management.webp",
+      "imageAlt": "Branded graphic with the title Ecommerce Management: What It Is and How to Do It Well",
+      "category": "E-commerce Operations",
+      "tags": [
+        "ecommerce",
+        "operations",
+        "management",
+        "workflows",
+        "productivity"
+      ],
+      "audience": [
+        "small business",
+        "founders"
+      ],
+      "services": [
+        "business-operations-support",
+        "customer-partnership-operations"
+      ],
+      "date": "2026-10-26",
+      "auto": true
+    },
+    {
       "url": "/blog/ecommerce-operations/",
       "title": "Ecommerce Operations: What They Are and How They Work ",
       "excerpt": "What ecommerce operations do, the eight areas they cover, and how an order moves from checkout to delivery, with answers to common questions.",
