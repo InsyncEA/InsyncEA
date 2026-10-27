@@ -1,0 +1,36 @@
+# InSyncEA
+
+> InSyncEA provides remote executive and operations support for growing businesses. It helps founders, executives, small business owners, and growing teams stay organized, manage daily operations, and keep important tasks moving forward. Run by Wendy Mwende, an executive assistant with nearly five years of experience, working remotely with international clients.
+
+InSyncEA offers four areas of support: executive support, business operations support, customer and partnership operations, and administrative support. Case studies describe real problems and how they were solved. Client names are not shown, and the CRM example uses sample data only.
+
+## Services
+
+- [All services](https://insyncea.com/services/): Overview of the four support areas and a guide to choosing the right one
+- [Executive Support](https://insyncea.com/services/executive-support/): Calendar and inbox management, meeting coordination, travel, and follow-ups
+- [Business Operations Support](https://insyncea.com/services/business-operations-support/): Task tracking, SOP creation, documentation, process improvement, and workflows
+- [Customer & Partnership Operations](https://insyncea.com/services/customer-partnership-operations/): Customer communication, vendor coordination, partnership follow-ups, and research
+- [Administrative Support](https://insyncea.com/services/administrative-support/): Data entry, document preparation, reports, and presentations
+
+## Case studies
+
+- [All case studies](https://insyncea.com/case-studies/): Index of 12 case studies
+- [Executive calendar management for a nonprofit founder](https://insyncea.com/case-studies/executive-calendar-management-nonprofit-founder/): Calendar coordination and follow-ups
+- [SOP development for a nonprofit](https://insyncea.com/case-studies/sop-development-process-documentation-nonprofit/): Standard operating procedures that made work repeatable
+- [Executive research and information gathering](https://insyncea.com/case-studies/executive-research-information-gathering/): Research organized into clear summaries
+- [Wholesale order tracking system](https://insyncea.com/case-studies/wholesale-order-tracking-system-operations-improvement/): One tracker for orders, tracking numbers, delivery dates, and invoices
+- [Shopify operations management](https://insyncea.com/case-studies/shopify-operations-management/): Shopify administration, orders, and customer inquiries
+- [Customer and partnership operations support](https://insyncea.com/case-studies/customer-partnership-operations-support/): Communication and follow-ups with customers, vendors, and partners
+- [Monday.com workflow setup and automations](https://insyncea.com/case-studies/monday-com-workflow-setup-automations/): Boards, statuses, automations, and dashboards
+- [WordPress website management](https://insyncea.com/case-studies/wordpress-website-management/): Ongoing content and website updates
+- [Lead generation and outreach support](https://insyncea.com/case-studies/lead-generation-outreach-support/): Prospect research, organized lists, and prepared outreach
+- [Customer growth for an AI product in Kenya](https://insyncea.com/case-studies/customer-growth-subscription-adoption-ai-product-kenya/): Customer success and payment troubleshooting
+- [CRM and lead management workflow (sample)](https://insyncea.com/case-studies/crm-lead-management-workflow-demo/): A portfolio demonstration built with sample data
+- [Calendly onboarding call scheduling workflow](https://insyncea.com/case-studies/calendly-onboarding-call-scheduling-workflow/): Round Robin scheduling with backup routing
+
+## About and contact
+
+- [About](https://insyncea.com/about/): The founder and how the support works
+- [FAQ](https://insyncea.com/faq/): Common questions about working with a remote executive assistant
+- [Contact and booking](https://insyncea.com/contact/): Book a free discovery call or send a message
+- [Privacy Policy](https://insyncea.com/privacy/): How personal information is handled
