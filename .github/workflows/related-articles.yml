@@ -24,6 +24,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Check the files are in place
+        run: |
+          missing=""
+          for f in tools/build_posts.py tools/build_related.py tools/blog-post-template.html tools/optimize_pages.py assets/posts.json; do
+            if [ ! -f "$f" ]; then echo "MISSING FILE: $f"; missing=1; fi
+          done
+          if [ -n "$missing" ]; then echo "Add the missing file(s) above in GitHub, then run this again."; exit 1; fi
       - name: Install tools
         run: pip install markdown pyyaml
       - name: Build blog pages from the CMS articles
