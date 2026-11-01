@@ -16,6 +16,9 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+concurrency:
+  group: blog-build
+  cancel-in-progress: false
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -27,10 +30,11 @@ jobs:
       - name: Check the files are in place
         run: |
           missing=""
-          for f in tools/build_posts.py tools/build_related.py tools/blog-post-template.html tools/optimize_pages.py assets/posts.json; do
+          for f in tools/build_posts.py tools/build_related.py tools/blog-post-template.html assets/posts.json; do
             if [ ! -f "$f" ]; then echo "MISSING FILE: $f"; missing=1; fi
           done
           if [ -n "$missing" ]; then echo "Add the missing file(s) above in GitHub, then run this again."; exit 1; fi
+          if [ ! -f tools/optimize_pages.py ]; then echo "NOTE: tools/optimize_pages.py is not there, so the speed-up step will be skipped."; fi
       - name: Install tools
         run: pip install markdown pyyaml
       - name: Build blog pages from the CMS articles
@@ -38,6 +42,7 @@ jobs:
       - name: Write related articles into the HTML
         run: python3 tools/build_related.py
       - name: Speed up the pages
+        if: ${{ hashFiles('tools/optimize_pages.py') != '' }}
         run: python3 tools/optimize_pages.py
       - name: Save changes
         run: |
@@ -46,6 +51,5 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add -A
             git commit -m "Update blog pages and related articles"
-            git pull --rebase origin "${GITHUB_REF_NAME}"
-            git push
+            git push || (git pull --rebase origin "${GITHUB_REF_NAME}" && git push)
           fi
