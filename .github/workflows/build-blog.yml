@@ -1,4 +1,4 @@
-name: Build blog pages and related articles
+name: Build blog
 on:
   push:
     branches: [main, master]
@@ -11,18 +11,31 @@ on:
       - '*.html'
       - '**/*.html'
   schedule:
-    - cron: '5 21 * * *'
+    - cron: '0 12 * * *'
+    - cron: '0 13 * * *'
   workflow_dispatch:
 permissions:
   contents: write
+concurrency:
+  group: blog-build
+  cancel-in-progress: false
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Check the files are in place
+        run: |
+          missing=""
+          for f in tools/build_posts.py tools/build_related.py tools/blog-post-template.html assets/posts.json; do
+            if [ ! -f "$f" ]; then echo "MISSING FILE: $f"; missing=1; fi
+          done
+          if [ -n "$missing" ]; then echo "Add the missing file(s) above in GitHub, then run this again."; exit 1; fi
+          if [ ! -f tools/optimize_pages.py ]; then echo "NOTE: tools/optimize_pages.py is not there, so the speed-up step will be skipped."; fi
       - name: Install tools
         run: pip install markdown pyyaml
       - name: Build blog pages from the CMS articles
@@ -30,6 +43,7 @@ jobs:
       - name: Write related articles into the HTML
         run: python3 tools/build_related.py
       - name: Speed up the pages
+        if: ${{ hashFiles('tools/optimize_pages.py') != '' }}
         run: python3 tools/optimize_pages.py
       - name: Save changes
         run: |
@@ -38,6 +52,13 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add -A
             git commit -m "Update blog pages and related articles"
-            git pull --rebase origin "${GITHUB_REF_NAME}"
-            git push
+            for attempt in 1 2 3 4; do
+              if git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}"; then
+                echo "Saved on attempt $attempt"; exit 0
+              fi
+              echo "Save attempt $attempt did not go through, trying again"; git rebase --abort 2>/dev/null || true; sleep 8
+            done
+            echo "Could not save after 4 attempts"; exit 1
+          else
+            echo "Nothing to save, the pages were already up to date."
           fi
