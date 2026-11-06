@@ -26,6 +26,32 @@
       "auto": true
     },
     {
+      "url": "/blog/calendar-management-for-executive-assistants/",
+      "title": "Calendar Management for Executive Assistants: A 2026 Guide",
+      "excerpt": "The core skills, daily routines, tools and SMART goals executive assistants need to manage an executive’s calendar with confidence.",
+      "image": "/assets/blog/calendar-management-for-executive-assistants.webp",
+      "imageAlt": "Branded graphic with the title Calendar Management for Executive Assistants and a circle of six skills around the words calendar control",
+      "category": "Executive Support",
+      "tags": [
+        "calendar",
+        "scheduling",
+        "assistants",
+        "executives",
+        "productivity"
+      ],
+      "audience": [
+        "founders",
+        "small business",
+        "startups",
+        "executives"
+      ],
+      "services": [
+        "executive-support"
+      ],
+      "date": "2026-11-06",
+      "auto": true
+    },
+    {
       "url": "/blog/business-operations-challenges/",
       "title": "Common Business Operations Challenges and How to Solve Them ",
       "excerpt": "Eight common operations problems, what causes them, and a practical fix for each, plus a simple way to find the real root cause.",
