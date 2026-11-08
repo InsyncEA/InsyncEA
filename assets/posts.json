@@ -52,6 +52,33 @@
       "auto": true
     },
     {
+      "url": "/blog/ceo-calendar-management/",
+      "title": "CEO Calendar Management: A Practical Guide for 2026",
+      "excerpt": "How to audit a CEO’s calendar, set weekly guardrails, cut meeting overload and decide what to delegate, with a template and a sample CEO day.",
+      "image": "/assets/blog/ceo-calendar-management.webp",
+      "imageAlt": "Branded graphic with the title CEO Calendar Management showing a calendar split into strategy, people, customers, board and flex time",
+      "category": "Executive Support",
+      "tags": [
+        "calendar",
+        "scheduling",
+        "executives",
+        "leadership",
+        "productivity"
+      ],
+      "audience": [
+        "founders",
+        "executives",
+        "small business",
+        "startups"
+      ],
+      "services": [
+        "executive-support",
+        "administrative-support"
+      ],
+      "date": "2026-11-08",
+      "auto": true
+    },
+    {
       "url": "/blog/business-operations-challenges/",
       "title": "Common Business Operations Challenges and How to Solve Them ",
       "excerpt": "Eight common operations problems, what causes them, and a practical fix for each, plus a simple way to find the real root cause.",
