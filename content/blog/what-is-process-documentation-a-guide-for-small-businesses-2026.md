@@ -13,7 +13,7 @@ keywords:
   - process documentation examples
   - process documentation template
   - how to document a process
-category: Workflows and Systems
+category: SOPs and Process Documentation
 tags:
   - process
   - documentation
