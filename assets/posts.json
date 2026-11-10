@@ -382,6 +382,32 @@
       "auto": true
     },
     {
+      "url": "/blog/process-documentation-examples/",
+      "title": "Process Documentation Examples for Small Businesses (With Templates)",
+      "excerpt": "What document processing is, the five-step workflow, examples by department, common problems and an eight-step plan to improve how you handle documents.",
+      "image": "/assets/blog/process-documentation-examples.webp",
+      "imageAlt": "Branded graphic with the title Process Documentation Examples comparing a vague instruction with a clear numbered welcome email process",
+      "category": "SOPs and Process Documentation",
+      "tags": [
+        "process",
+        "documentation",
+        "sops",
+        "workflows",
+        "examples"
+      ],
+      "audience": [
+        "founders",
+        "small business",
+        "executives",
+        "startups"
+      ],
+      "services": [
+        "business-operations-support"
+      ],
+      "date": "2026-11-10",
+      "auto": true
+    },
+    {
       "url": "/blog/functions-of-business-operations/",
       "title": "The 7 Core Functions of Business Operations ",
       "excerpt": "The seven jobs every business does behind the scenes, how they work together, and how to find the one that needs attention first. ",
