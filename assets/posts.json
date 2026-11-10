@@ -155,6 +155,32 @@
       "auto": true
     },
     {
+      "url": "/blog/document-control-process/",
+      "title": "Document Control Process: A Practical Guide for Small Businesses",
+      "excerpt": "The eight steps of a document control process, who does what, how to keep a master register and version documents, and what ISO 9001 asks for.",
+      "image": "/assets/blog/document-control-process.webp",
+      "imageAlt": "Branded graphic with the title Document Control Process next to a controlled document record showing version 2.1, owner, approver, review date and current status",
+      "category": "SOPs and Process Documentation",
+      "tags": [
+        "documents",
+        "control",
+        "compliance",
+        "process",
+        "operations"
+      ],
+      "audience": [
+        "founders",
+        "executives",
+        "small business",
+        "startups"
+      ],
+      "services": [
+        "business-operations-support"
+      ],
+      "date": "2026-11-10",
+      "auto": true
+    },
+    {
       "url": "/blog/document-process-automation/",
       "title": "Document Process Automation: How Small Businesses Cut Manual Work",
       "excerpt": "What document process automation is, how the six-stage pipeline works, which processes to automate first and how to start without automating a mess.",
