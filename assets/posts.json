@@ -563,6 +563,33 @@
       "auto": true
     },
     {
+      "url": "/blog/document-processing/",
+      "title": "What Is Document Processing? A Guide for Businesses (2026)",
+      "excerpt": "What document processing is, the five-step workflow, examples by department, common problems and an eight-step plan to improve how you handle documents.",
+      "image": "/assets/blog/document-processing.webp",
+      "imageAlt": "Branded graphic with the title Document Processing showing one purchase order scattered across six places and brought into one front door",
+      "category": "SOPs and Process Documentation",
+      "tags": [
+        "documents",
+        "process",
+        "workflows",
+        "operations",
+        "digital"
+      ],
+      "audience": [
+        "founders",
+        "executives",
+        "small business",
+        "startups"
+      ],
+      "services": [
+        "business-operations-support",
+        "administrative-support"
+      ],
+      "date": "2026-11-10",
+      "auto": true
+    },
+    {
       "url": "/blog/process-documentation/",
       "title": "What Is Process Documentation? A Guide for Small Businesses (2026)",
       "excerpt": "What process documentation is, why small businesses need it, how to write it in seven steps and which processes to document first.",
