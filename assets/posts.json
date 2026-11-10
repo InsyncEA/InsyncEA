@@ -155,6 +155,33 @@
       "auto": true
     },
     {
+      "url": "/blog/document-process-automation/",
+      "title": "Document Process Automation: How Small Businesses Cut Manual Work",
+      "excerpt": "What document process automation is, how the six-stage pipeline works, which processes to automate first and how to start without automating a mess.",
+      "image": "/assets/blog/document-process-automation.webp",
+      "imageAlt": "Branded graphic with the title Document Process Automation showing an invoice being read and checked, reviewed by a person for exceptions, then filed and synced",
+      "category": "SOPs and Process Documentation",
+      "tags": [
+        "automation",
+        "documents",
+        "workflows",
+        "process",
+        "ai"
+      ],
+      "audience": [
+        "founders",
+        "executives",
+        "small business",
+        "startups"
+      ],
+      "services": [
+        "business-operations-support",
+        "administrative-support"
+      ],
+      "date": "2026-11-10",
+      "auto": true
+    },
+    {
       "url": "/blog/ecommerce-management/",
       "title": "Ecommerce Management: What It Is and How to Do It Well ",
       "excerpt": "What ecommerce management covers, how to run it with a simple weekly routine, and when to hire or outsource it.",
