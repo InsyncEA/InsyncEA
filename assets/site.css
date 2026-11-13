@@ -90,3 +90,61 @@ article>.hero{padding:72px 0 64px}article>.hero h1{max-width:26ch;font-size:clam
 .post-layout .post-body img,
 .post-layout .post-body svg,
 .post-layout .post-body figure{max-width:100%!important;height:auto!important}
+/* ---------- Author box ---------- */
+
+.author-box{
+    display:flex;
+    gap:20px;
+    align-items:flex-start;
+    margin:3rem 0 0;
+    padding:24px;
+    background:#F3F6F2;
+    border:1px solid #d3dfd7;
+    border-radius:10px;
+}
+
+.author-box img{
+    width:96px;
+    height:96px;
+    max-width:none;
+    border-radius:50%;
+    object-fit:cover;
+    flex:none;
+    display:block;
+    margin:0;
+}
+
+.post-body .author-box p{
+    margin:0 0 .45rem;
+    max-width:none;
+}
+
+.post-body .ab-name{
+    font:600 1.25rem "Source Serif 4", Georgia, serif;
+    color:var(--g);
+}
+
+.post-body .ab-role{
+    font-size:.78rem;
+    letter-spacing:.09em;
+    text-transform:uppercase;
+    font-weight:700;
+    color:var(--mut);
+}
+
+.post-body .ab-bio{
+    font-size:.98rem;
+    line-height:1.6;
+}
+
+.post-body .ab-more{
+    margin-bottom:0;
+}
+
+@media (max-width:520px){
+    .author-box{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+}
