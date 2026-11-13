@@ -1,6 +1,32 @@
 {
   "posts": [
     {
+      "url": "/blog/document-review-software/",
+      "title": "Best Software for Streamlining Document Review Processes (2026)",
+      "excerpt": "The best software for streamlining document review processes by use case, with a feature checklist, serial vs parallel review and a two-week pilot plan. ",
+      "image": "/assets/blog/document-review-software.webp",
+      "imageAlt": "Branded graphic with the title Document Review Software showing a draft moving to reviewers, then an approver, then one final live copy",
+      "category": "SOPs and Process Documentation",
+      "tags": [
+        "software",
+        "documents",
+        "review",
+        "workflows",
+        "approvals"
+      ],
+      "audience": [
+        "founders",
+        "small business",
+        "executives",
+        "startups"
+      ],
+      "services": [
+        "business-operations-support"
+      ],
+      "date": "2026-11-13",
+      "auto": true
+    },
+    {
       "url": "/blog/business-operations-vs-operations-management/",
       "title": "Business Operations vs Operations Management: What’s the Difference?",
       "excerpt": "The simple difference between business operations and operations management, with examples, a comparison table, and where to start.",
